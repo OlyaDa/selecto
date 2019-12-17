@@ -23,147 +23,49 @@ $(function(){
     });
 });
 
-// //slider for "look video review about our projects"
-// //
-// // $('.slider').slick({
-// //     slidesToShow: 2,
-// //     slidesToScroll: 1,
-// //     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
-// //     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
-// //     autoplay: false,
-// //     autoplaySpeed: 1500,
-// //     infinite: true,
-// //     responsive: [
-// //         {
-// //             breakpoint: 577,
-// //             settings: {
-// //                 slidesToShow: 1,
-// //                 slidesToScroll: 1,
-// //                 infinite: true,
-// //                 dots: true,
-// //                 arrows: false,
-// //             }
-// //         },
-// //     ]
-// // });
-// //
-// // //slider for "our cases"
-// //
-// // $('.cases-slider').slick({
-// //     slidesToShow: 1,
-// //     slidesToScroll: 1,
-// //     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
-// //     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
-// //     autoplay: false,
-// //     autoplaySpeed: 1500,
-// //     infinite: true,
-// //     responsive: [
-// //         {
-// //             breakpoint: 769,
-// //             settings: {
-// //                 slidesToShow: 1,
-// //                 slidesToScroll: 1,
-// //                 infinite: true,
-// //                 dots: true,
-// //                 arrows: false,
-// //             }
-// //         },
-// //     ]
-// // });
-// //
-// // //slider for "our team"
-// //
-// // $('.team-slider').slick({
-// //     infinite: true,
-// //     slidesToShow: 3,
-// //     slidesToScroll: 1,
-// //     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
-// //     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
-// //     autoplay: false,
-// //     autoplaySpeed: 1500,
-// //     responsive: [
-// //         {
-// //             breakpoint: 577,
-// //             settings: {
-// //                 slidesToShow: 1,
-// //                 slidesToScroll: 1,
-// //                 infinite: true,
-// //                 dots: true,
-// //                 arrows: false,
-// //             }
-// //         },
-// //     ]
-// // });
-// //
-// // //slider for "our portfolio"
-// //
-// // $('.portfolio-slider').slick({
-// //     slidesToShow: 2,
-// //     slidesToScroll: 1,
-// //     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-chevron-left"></i> </button>',
-// //     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-chevron-right"></i> </button>',
-// //     autoplay: false,
-// //     autoplaySpeed: 1500,
-// //     infinite: true,
-// //     responsive: [
-// //         {
-// //             breakpoint: 577,
-// //             settings: {
-// //                 slidesToShow: 1,
-// //                 slidesToScroll: 1,
-// //                 infinite: true,
-// //                 dots: true,
-// //                 arrows: false,
-// //             }
-// //         },
-// //     ]
-// // });
-// //
-// // //tabs
-// //
-// // (function($) {
-// //     $(function() {
-// //         $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-// //             $(this)
-// //                 .addClass('active').siblings().removeClass('active')
-// //                 .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-// //         });
-// //     });
-// // })(jQuery);
-// //
-// // //scroll
-// //
-// // $('.nav-link-new').mPageScroll2id();
-// //
-// // $(document).ready(function() {
-// //     $('.popup-youtube').magnificPopup({
-// //         disableOn: 700,
-// //         type: 'iframe',
-// //         mainClass: 'mfp-fade',
-// //         removalDelay: 160,
-// //         preloader: false,
-// //
-// //         fixedContentPos: false
-// //     });
-// // });
-// //
-// // //accordion for mobile version section "services"
-// //
-// // const accordionToggle = (slideMenu) => (e) => {
-// //     slideMenu.forEach((links) => {
-// //         const hidePanel = links.nextElementSibling;
-// //         if (links === e.currentTarget) {
-// //             e.currentTarget.classList.toggle('active');
-// //             hidePanel.classList.toggle('active-block');
-// //         } else {
-// //             links.classList.remove('active');
-// //             hidePanel.classList.remove('active-block');
-// //         }
-// //     });
-// // };
-// //
-// // const slideMenu = document.querySelectorAll('.accordion-link');
-// //
-// // slideMenu.forEach((links) => {
-// //     links.addEventListener('click', accordionToggle(slideMenu))
-// // });
+//slider for "reviews"
+
+$('.reviews-slider').slick({
+    dots: true,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                dots: false,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        },
+    ]
+});
+
+//scroll
+
+$('.nav-link-new').mPageScroll2id();
+
+//video popup
+
+$(document).ready(function() {
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
+

@@ -1,0 +1,146 @@
+//////////////////////////CORPORATE BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+.corporate {
+padding: 99px 0 80px 0;
+
+  .image {
+    max-width: 573px;
+    max-height: 603px;
+    margin-bottom: 154px;
+  }
+
+  .cafe-caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #2D2D2D;
+  }
+
+  .caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #097D07;
+    margin-bottom: 65px;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    .image {
+      max-width: 325px;
+      max-height: 325px;
+      margin-right: 24px;
+      margin-bottom: 21px;
+      position: relative;
+    }
+    .text {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 13px;
+    }
+  }
+
+  form {
+    display: inline-block;
+    background: url("../../public/images/bg-corp.png");
+    background-size: cover;
+    padding: 50px 0 69px 0;
+    margin-top: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    .form-title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #2D2D2D;
+      margin-bottom: 74px;
+      max-width: 516px;
+    }
+
+    input {
+      font-family: "Comfortaa", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      //text-align: center;
+      background: transparent;
+      text-transform: uppercase;
+      color: #2D2D2D;
+      border: 1px solid #898989;
+      border-radius: 10px;
+      padding: 16px 26px;
+      width: 367px;
+      display: block;
+      margin-bottom: 37px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    textarea {
+      width: 367px;
+      height: 90px;
+      display: block;
+      font-family: "Comfortaa", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+      margin-left: auto;
+      margin-right: auto;
+      color: #2D2D2D;
+      border: 1px solid #898989;
+      border-radius: 10px;
+      padding: 16px 14px 32px 26px;
+      background: transparent;
+      margin-bottom: 51px;
+    }
+
+    button {
+      max-width: 367px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #0B9708;
+      border-radius: 10px;
+      .btn {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-radius: 10px;
+        padding: 14px 40px;
+      }
+    }
+
+  }
+}
+
+//////////////////////////CORPORATE END////////////////////////

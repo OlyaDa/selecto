@@ -1,0 +1,161 @@
+////////////////////////FRIDGE BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+.fridge {
+  padding: 88px 0 29px 0;
+  background: url("../../public/images/bg-fridge.png");
+  background-size: cover;
+
+  .caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 1px;
+  }
+
+  .image {
+    max-width: 383px;
+    max-height: 339px;
+    position: relative;
+    margin-bottom: 71px;
+  }
+
+  .title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 319px;
+    height: 73px;
+    //margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 100px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -28px;
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 100px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -25px;
+    }
+  }
+
+  .list {
+    position: relative;
+  }
+
+  .image-list {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    //position: relative;
+    &:before {
+      content: "";
+      display: inline-block;
+      // width: 558px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 42.2%;
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      // width: 558px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 42.2%;
+    }
+  }
+
+  .list.first {
+    margin-top: 71px;
+    margin-bottom: 24px;
+  }
+
+  .free-caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 149.9%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 16px;
+    width: 636px;
+  }
+
+  form {
+    display: flex;
+    justify-content: flex-end;
+
+    input {
+      padding: 13px 39px 15px 36px;
+      border: 1px solid #9B9B9B;
+      border-radius: 10px;
+      font-family: 'Comfortaa', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #454545;
+      width: 298px;
+    }
+
+    button {
+      background: #27AF25;
+      border-radius: 10px;
+      margin-left: 14px;
+      .btn {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 11px 70px 11px 70px;
+      }
+    }
+  }
+}
+
+//////////////////////////FRIDGE END////////////////////////
+

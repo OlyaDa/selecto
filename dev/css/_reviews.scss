@@ -1,0 +1,157 @@
+//////////////////////////REVIEWS BEGIN////////////////////////
+
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+.reviews {
+  background: url("../../public/images/bg-prod.png");
+  background-size: cover;
+  padding-top: 89px;
+  padding-bottom: 90px;
+  position: relative;
+
+  .caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #097D07;
+    margin-bottom: 63px;
+  }
+
+  .reviews-title {
+    display: flex;
+    align-items: center;
+
+    .image {
+      max-width: 84px;
+      max-height: 84px;
+      margin-right: 31px;
+      margin-bottom: 24px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      color: #242424;
+      margin: 0 0 11px;
+    }
+
+    .town {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+      color: #242424;
+      margin: 0;
+
+    }
+  }
+  .reviews-text {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #242424;
+  }
+
+  .reviews-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    left: 93% !important;
+  }
+
+  .slick-next {
+    right: 0 !important;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    top: 122%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #0B9708;;
+    border: 1px solid #0B9708;;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+    border: 1px solid #0B9708;
+    background: #0B9708;
+  }
+
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    border: 1px #1D1D1D solid;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 15px;
+  }
+
+  .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    border: 1px #1D1D1D solid;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #1D1D1D;
+    border-radius: 50%;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -29%;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .slick-dots li button:before {
+    content: "";
+  }
+  ///slick-prev slick-next end
+}
+
+//////////////////////////REVIEWS END////////////////////////

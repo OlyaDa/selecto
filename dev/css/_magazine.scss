@@ -1,0 +1,96 @@
+//////////////////////////MAGAZINE BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+.magazine {
+  background: url("../../public/images/bg-magazine.png");
+  background-size: cover;
+  padding: 88px 0 114px 0;
+
+  .caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 44px;
+  }
+
+  .title {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 74px;
+  }
+
+  .image {
+    max-width: 383px;
+    max-height: 339px;
+    position: relative;
+  }
+
+  .text {
+    position: absolute;
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 200%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 100px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -28px;
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      width: 100px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -25px;
+    }
+  }
+
+  .text.first {
+    width: 331px;
+    height: 67px;
+  }
+
+  .text.second {
+    width: 333px;
+    height: 92px;
+  }
+
+  .text.third {
+    width: 333px;
+    height: 69px;
+  }
+}
+
+//////////////////////////MAGAZINE END////////////////////////
