@@ -1,0 +1,266 @@
+//////////////////////////PIZZAS BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+.pizzas {
+  padding: 100px 0 14px 0;
+  position: relative;
+
+  //.pizzas-inner {
+  //  display: flex;
+  //  justify-content: space-between;
+  //  flex-wrap: wrap;
+  //}
+
+  .caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #097D07;
+    margin-bottom: 83px;
+  }
+
+  .pizza-card {
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin-bottom: 37px;
+    &:hover .pizza-body {
+      background: url("../../public/images/bg-pizza.png");
+      background-size: cover;
+      transition: background 0.5s linear;
+      color: #FFFFFF;
+      .title {
+        color: #FFFFFF;
+        transition: 0.5s ease;
+        &:after {
+          background: #FFFFFF;
+          transition: 0.5s ease;
+        }
+      }
+      .composition {
+        color: #FFFFFF;
+        transition: 0.5s ease;
+      }
+      .text {
+        color: #FFFFFF;
+        transition: 0.5s ease;
+      }
+      .button {
+        .btn{
+          background: #27AF25;
+          color: #FFFFFF;
+          transition: 0.5s ease;
+          &:before {
+            background: #27AF25;
+            transition: 0.5s ease;
+          }
+        }
+      }
+    }
+
+    .pizza-body {
+      padding: 35px 19px 27px 19px;
+    }
+
+    .image {
+      max-width: 290px;
+      max-height: 214px;
+    }
+
+    .title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 62px;
+      position: relative;
+      &:after {
+        content: "";
+        width: 55px;
+        height: 1px;
+        background: #000;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: -145%;
+        display: inline-block;
+        position: absolute;
+      }
+    }
+
+    .composition {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 200%;
+      text-transform: uppercase;
+      color: #000000;
+      max-width: 235px;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .line-first {
+      height: 1px;
+      background: #939393;
+      width: 158px;
+      margin-top: 8px;
+    }
+
+    .line-second {
+      height: 1px;
+      background: #939393;
+      width: 162px;
+      margin-top: 8px;
+    }
+
+    .text {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 200%;
+      color: #000000;
+    }
+
+    .button {
+      margin-top: 18px;
+      .btn {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0B9708;
+        background: #DDDDDD;
+        padding: 10px 0;
+        position: relative;
+        width: 250px;
+        border-radius: 0;
+        &:before {
+          content: "";
+          background: #DDDDDD;
+          height: 8px;
+          width: 250px;
+          top: -8px;
+          left: -1px;
+          display: inline-block;
+          position: absolute;
+          clip-path: polygon(0 100%, 2% 0,  4% 100%, 4% 100%, 6% 0, 8% 100%, 8% 100%, 10% 0, 12% 100%, 12% 100%, 14% 0, 16% 100%, 16% 100%, 18% 0, 20% 100%, 20% 100%, 22% 0, 24% 100%, 24% 100%, 26% 0, 28% 100%, 28% 100%, 30% 0, 32% 100%, 32% 100%, 34% 0, 36% 100%, 36% 100%, 38% 0, 40% 100%, 40% 100%, 42% 0,  44% 100%, 44% 100%, 46% 0, 48% 100%, 48% 100%, 50% 0, 52% 100%, 52% 100%, 54% 0, 56% 100%, 56% 100%, 58% 0, 60% 100%, 60% 100%, 62% 0, 64% 100%, 64% 100%, 66% 0, 68% 100%, 68% 100%, 70% 0, 72% 100%, 72% 100%, 74% 0, 76% 100%, 76% 100%, 78% 0, 80% 100%, 80% 100%, 82% 0,  84% 100%, 84% 100%, 86% 0, 88% 100%, 88% 100%, 90% 0, 92% 100%, 92% 100%, 94% 0, 96% 100%, 96% 100%, 98% 0, 100% 100%);
+        }
+      }
+    }
+  }
+
+  .clock {
+    position: relative;
+  }
+
+  .image-clock {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    //position: relative;
+    &:before {
+      content: "";
+      display: inline-block;
+     // width: 558px;
+      height: 1px;
+      background: black;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 42.2%;
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      // width: 558px;
+      height: 1px;
+      background: black;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 42.2%;
+    }
+  }
+
+  .free-caption {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 149.9%;
+    text-transform: uppercase;
+    color: #242424;
+    margin: 0;
+  }
+
+  .free-text {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 200%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #242424;
+    margin-top: 38px;
+    margin-bottom: 8px;
+  }
+
+  form {
+    display: flex;
+    justify-content: flex-end;
+
+    input {
+      padding: 13px 39px 15px 36px;
+      border: 1px solid #9B9B9B;
+      border-radius: 10px;
+      font-family: 'Comfortaa', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: #454545;
+      width: 298px;
+    }
+
+    button {
+      background: #27AF25;
+      border-radius: 10px;
+      margin-left: 14px;
+      .btn {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 11px 70px 11px 70px;
+      }
+    }
+  }
+}
+
+//////////////////////////PIZZAS END////////////////////////

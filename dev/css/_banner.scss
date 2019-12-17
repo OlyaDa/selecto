@@ -1,0 +1,126 @@
+////////////////////////BANNER BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.banner {
+
+  .banner-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-big {
+    max-width: 842px;
+    max-height: 633px;
+  }
+
+  .image {
+    position: relative;
+    max-width: 598px;
+    max-height: 316px;
+  }
+
+  .text-first {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    .title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 42px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 15%;
+        left: -8%;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 42px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 15%;
+        right: -8%;
+      }
+    }
+
+    .sub-title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      &:before {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 55px;
+        background: #FFFFFF;
+        position: absolute;
+        bottom: 41%;
+        left: 38%;
+      }
+    }
+
+    .text {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 200%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      max-width: 228px;
+      margin-top: 35px;
+    }
+  }
+  .text-second {
+    font-family: $font_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 158.9%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    max-width: 296px;
+    position: absolute;
+    bottom: 23%;
+    left: 8%;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 42px;
+      background: #000;
+      position: absolute;
+      top: 49%;
+      left: -8%;
+    }
+    &:after {
+      content: "";
+      display: inline-block;
+      height: 2px;
+      width: 42px;
+      background: #000;
+      position: absolute;
+      top: 49%;
+      right: -8%;
+    }
+  }
+}

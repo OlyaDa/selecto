@@ -1,0 +1,136 @@
+
+////////////////////////WHY BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
+
+.why {
+  padding: 81px 0 83px 0;
+  background: url("../../public/images/bg-why.png") center center no-repeat;
+  background-size: cover;
+
+  .caption {
+    font-family: $caption_text;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #097D07;
+    margin: 0 0 60px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 92px;
+
+    .image {
+      max-width: 573px;
+      max-height: 259px;
+    }
+
+    .about-text {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 195.5%;
+      color: #000000;
+      max-width: 631px;
+      margin: 0;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .contact-desk {
+      background: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      padding: 36px 62px 28px 38px;
+      position: absolute;
+      top: 56px;
+      left: 60px;
+
+      .address-time {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .address-tel {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+        .contact-caption {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #097D07;
+        margin-bottom: 18px;
+      }
+
+      .contact-title {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 195.5%;
+        color: #000000;
+        margin-bottom: 5px;
+      }
+
+      .contact-text {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 195.5%;
+        color: #000000;
+        margin: 0;
+        width: 160px;
+
+        a {
+          display: block;
+          color: #000000;
+          text-decoration: none;
+        }
+      }
+
+      .time {
+        max-width: 162px;
+      }
+
+      .image-icon {
+        max-width: 44px;
+        max-height: 44px;
+        display: flex;
+      }
+
+      .social-icon {
+        display: flex;
+      }
+
+      .inst {
+        margin: 0 17px;
+      }
+    }
+
+    .image {
+      max-width: 933px;
+      max-height: 394px;
+      margin-left: auto;
+    }
+  }
+
+}
+
+////////////////////////WHY END////////////////////////
