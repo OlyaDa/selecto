@@ -129,18 +129,50 @@
       display: block; } }
 
 .banner {
-  position: relative;
-  padding-top: 60px; }
+  position: relative; }
   .banner .banner-inner {
-    display: flex;
-    justify-content: center; }
+    display: flex; }
   .banner .image-big {
-    max-width: 842px;
-    max-height: 633px; }
-  .banner .image {
+    background: url("../../public/images/bg-frst.png") center;
+    background-size: cover;
+    min-height: 100vh;
+    flex-basis: 59%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .banner .images {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-basis: 41%; }
+  .banner .image-first {
+    padding-top: 60px;
+    background: url("../../public/images/banner2.png");
+    background-size: cover;
     position: relative;
-    max-width: 598px;
-    max-height: 316px; }
+    flex-basis: 50%; }
+  .banner .image-second {
+    background: url("../../public/images/banner3.png");
+    background-size: cover;
+    position: relative;
+    flex-basis: 50%; }
+  .banner .image-vino {
+    max-width: 85px;
+    max-height: 85px;
+    margin-left: auto;
+    margin-right: auto; }
+  .banner .image-title {
+    max-width: 596px;
+    max-height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; }
+  .banner .image-text {
+    max-width: 400px;
+    max-height: 55px;
+    margin-left: auto;
+    margin-right: auto; }
   .banner .text-first {
     position: absolute;
     bottom: 8%;
@@ -240,6 +272,20 @@
     .banner .text-first .text {
       text-shadow: 2px 2px 2px #AAA5B8;
       margin-top: 14px; } }
+  @media (max-width: 1024px) {
+    .banner .banner-inner {
+      display: flex;
+      flex-direction: column; }
+    .banner .images {
+      min-height: 100%;
+      flex-basis: 100%; }
+      .banner .images .image-first {
+        padding: 0;
+        flex-basis: 100%; }
+      .banner .images .image-second {
+        flex-basis: 100%; }
+    .banner .image-big {
+      flex-basis: 100%; } }
   @media (max-width: 1090px) {
     .banner .text-first {
       bottom: 0; }
@@ -348,14 +394,15 @@
     .why .about .image {
       max-width: 573px;
       max-height: 259px;
-      margin-right: 30px; }
-    .why .about .image-play {
-      max-width: 68px;
-      max-height: 68px;
+      margin-right: 30px;
+      position: relative; }
+    .why .about .fa-play-circle {
+      color: #fff;
+      font-size: 68px;
       position: absolute;
       top: calc(50% - 34px);
       left: calc(50% - 34px); }
-      .why .about .image-play:hover {
+      .why .about .fa-play-circle:hover {
         transform: scale(1.2); }
     .why .about .about-text {
       font-family: "Montserrat", sans-serif;

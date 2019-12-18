@@ -29,11 +29,14 @@ $caption_text: Cera Pro, sans-serif;
       max-width: 573px;
       max-height: 259px;
       margin-right: 30px;
+      position: relative;
     }
 
-    .image-play {
-      max-width: 68px;
-      max-height: 68px;
+    .fa-play-circle {
+      //max-width: 68px;
+      //max-height: 68px;
+      color: #fff;
+      font-size: 68px;
       position: absolute;
       top: calc(50% - 34px);
       left: calc(50% - 34px);

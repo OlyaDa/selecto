@@ -3,22 +3,73 @@ $font_text: 'Montserrat', sans-serif;
 
 .banner {
   position: relative;
-  padding-top: 60px;
+  //padding-top: 60px;
 
   .banner-inner {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
   }
 
   .image-big {
-    max-width: 842px;
-    max-height: 633px;
+    background: url("../../public/images/bg-frst.png") center;
+    background-size: cover;
+    min-height: 100vh;
+    flex-basis: 59%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
 
-  .image {
+  .images {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-basis: 41%;
+  }
+
+  .image-first {
+    padding-top: 60px;
+    background: url("../../public/images/banner2.png");
+    background-size: cover;
     position: relative;
-    max-width: 598px;
-    max-height: 316px;
+    flex-basis: 50%;
+  }
+
+  .image-second {
+    background: url("../../public/images/banner3.png");
+    background-size: cover;
+    position: relative;
+    flex-basis: 50%;
+  }
+
+  //.image {
+  //  position: relative;
+  //  max-width: 598px;
+  //  max-height: 316px;
+  //}
+
+  .image-vino {
+    max-width: 85px;
+    max-height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-title {
+    max-width: 596px;
+    max-height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .image-text {
+    max-width: 400px;
+    max-height: 55px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .text-first {
@@ -139,6 +190,29 @@ $font_text: 'Montserrat', sans-serif;
         margin-top: 14px;
       }
     }
+  }
+
+  @media (max-width: 1024px) {
+    .banner-inner {
+      display: flex;
+      flex-direction: column;
+    }
+    .images {
+      min-height: 100%;
+      flex-basis: 100%;
+      .image-first{
+        padding: 0;
+        flex-basis: 100%;
+      }
+      .image-second {
+        flex-basis: 100%;
+      }
+    }
+    .image-big {
+      flex-basis: 100%;
+    }
+
+
   }
 
   @media (max-width: 1090px) {
