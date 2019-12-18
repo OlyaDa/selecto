@@ -199,12 +199,16 @@
     position: relative;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
+    .banner .image-first img {
+      display: none; }
   .banner .image-second {
     background: url("../../public/images/banner3.png");
     background-size: cover;
     position: relative;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
+    .banner .image-second img {
+      display: none; }
   .banner .image-vino {
     max-width: 85px;
     max-height: 85px;
@@ -336,10 +340,18 @@
       .banner .images .image-first {
         padding: 0;
         -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; }
+        flex-basis: 100%;
+        max-height: 600px;
+        width: 100%; }
+        .banner .images .image-first img {
+          display: block; }
       .banner .images .image-second {
+        max-height: 600px;
+        width: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
+        .banner .images .image-second img {
+          display: block; }
     .banner .image-big {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%; } }

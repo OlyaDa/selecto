@@ -35,6 +35,9 @@ $font_text: 'Montserrat', sans-serif;
     background-size: cover;
     position: relative;
     flex-basis: 50%;
+    img {
+      display: none;
+    }
   }
 
   .image-second {
@@ -42,6 +45,9 @@ $font_text: 'Montserrat', sans-serif;
     background-size: cover;
     position: relative;
     flex-basis: 50%;
+    img {
+      display: none;
+    }
   }
 
   //.image {
@@ -203,9 +209,19 @@ $font_text: 'Montserrat', sans-serif;
       .image-first{
         padding: 0;
         flex-basis: 100%;
+        max-height: 600px;
+        width: 100%;
+        img {
+          display: block;
+        }
       }
       .image-second {
+        max-height: 600px;
+        width: 100%;
         flex-basis: 100%;
+        img {
+          display: block;
+        }
       }
     }
     .image-big {
