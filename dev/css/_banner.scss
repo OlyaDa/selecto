@@ -31,7 +31,7 @@ $font_text: 'Montserrat', sans-serif;
 
   .image-first {
     padding-top: 60px;
-    background: url("../../public/images/banner2.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../../public/images/banner2.png");
     background-size: cover;
     position: relative;
     flex-basis: 50%;
@@ -188,11 +188,11 @@ $font_text: 'Montserrat', sans-serif;
   @media (max-width: 1200px) {
     .text-first {
       .title {
-        text-shadow: 2px 2px 2px #AAA5B8;
+        //text-shadow: 2px 2px 2px #AAA5B8;
         margin-bottom: 8px;
       }
       .text {
-        text-shadow: 2px 2px 2px #AAA5B8;
+        //text-shadow: 2px 2px 2px #AAA5B8;
         margin-top: 14px;
       }
     }
@@ -212,6 +212,7 @@ $font_text: 'Montserrat', sans-serif;
         max-height: 600px;
         width: 100%;
         img {
+          opacity: 0.7;
           display: block;
         }
       }

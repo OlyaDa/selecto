@@ -63,6 +63,8 @@
     margin: 0 0 0 48px; }
   .header .logo-mobile {
     display: none; }
+  .header .phone {
+    display: none; }
   .header .toggle-menu {
     position: relative;
     width: 18px;
@@ -118,10 +120,9 @@
     display: none; }
   .header .change-img .logo-mobile {
     display: block; }
-  @media (max-width: 1107px) {
-    .header .address {
-      display: none; } }
-  @media (max-width: 839px) {
+  @media (max-width: 1089px) {
+    .header .phone {
+      display: block; }
     .header .header__inner {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -157,6 +158,12 @@
       margin-bottom: 18px; }
     .header .toggle-menu {
       display: block; } }
+  @media (max-width: 460px) {
+    .header .address p {
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0 0 0 20px;
+      max-width: 120px; } }
 
 .banner {
   position: relative; }
@@ -194,7 +201,8 @@
     flex-basis: 41%; }
   .banner .image-first {
     padding-top: 60px;
-    background: url("../../public/images/banner2.png");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../public/images/banner2.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3) 100%), url("../../public/images/banner2.png");
     background-size: cover;
     position: relative;
     -ms-flex-preferred-size: 50%;
@@ -319,7 +327,6 @@
       right: -8%; }
   @media (max-width: 1200px) {
     .banner .text-first .title {
-      text-shadow: 2px 2px 2px #AAA5B8;
       margin-bottom: 8px; }
     .banner .text-first .text {
       text-shadow: 2px 2px 2px #AAA5B8;
@@ -344,6 +351,7 @@
         max-height: 600px;
         width: 100%; }
         .banner .images .image-first img {
+          opacity: 0.7;
           display: block; }
       .banner .images .image-second {
         max-height: 600px;
@@ -2122,3 +2130,30 @@ body {
 img {
   width: 100%;
   height: auto; }
+
+.cafe {
+  padding-top: 99px; }
+  .cafe .image {
+    max-width: 573px;
+    max-height: 603px; }
+  .cafe .cafe-caption {
+    font-family: Cera Pro, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #2D2D2D; }
+  @media (max-width: 991px) {
+    .cafe .image {
+      margin: auto auto 30px; }
+    .cafe .cafe-caption {
+      text-align: center; } }
+  @media (max-width: 768px) {
+    .cafe {
+      padding-top: 60px; }
+      .cafe .cafe-caption {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 30px;
+        margin-top: 30px; } }

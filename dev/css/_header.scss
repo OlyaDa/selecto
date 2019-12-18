@@ -43,6 +43,8 @@ $font_text: 'Montserrat', sans-serif;
 
   }
 
+
+
   .menu a:hover {
     color: #000000;
     text-decoration: none;
@@ -72,6 +74,10 @@ $font_text: 'Montserrat', sans-serif;
   .logo-mobile {
     display: none;
   }
+
+.phone {
+  display: none;
+}
 
   // c крестиком
 
@@ -146,12 +152,15 @@ $font_text: 'Montserrat', sans-serif;
   ///media
 
   @media (max-width: 1107px) {
-    .address {
-      display: none;
-    }
+    //.address {
+    //  display: none;
+    //}
   }
 
-  @media (max-width: 839px) {
+  @media (max-width: 1089px) {
+    .phone {
+      display: block;
+    }
 
     .header__inner {
       display: flex;
@@ -194,6 +203,15 @@ $font_text: 'Montserrat', sans-serif;
 
     .toggle-menu {
       display: block;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .address p {
+      font-size: 10px;
+      line-height: 12px;
+      margin: 0 0 0 20px;
+      max-width: 120px;
     }
   }
 
