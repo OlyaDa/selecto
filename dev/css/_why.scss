@@ -31,6 +31,17 @@ $caption_text: Cera Pro, sans-serif;
       margin-right: 30px;
     }
 
+    .image-play {
+      max-width: 68px;
+      max-height: 68px;
+      position: absolute;
+      top: calc(50% - 34px);
+      left: calc(50% - 34px);
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
     .about-text {
       font-family: $font_text;
       font-style: normal;
@@ -175,7 +186,7 @@ $caption_text: Cera Pro, sans-serif;
     padding: 60px 0 60px 0;
 
     .caption {
-      font-size: 38px;
+      font-size: 30px;
       margin: 0 0 30px;
       line-height: 38px;
     }

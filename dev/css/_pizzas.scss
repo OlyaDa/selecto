@@ -25,7 +25,7 @@ $caption_text: Cera Pro, sans-serif;
 
   .pizzas-inner {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -34,13 +34,19 @@ $caption_text: Cera Pro, sans-serif;
   }
 
   .pizza-card {
+    //padding: 0 19px 27px 19px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+
     margin-right: 10px;
     margin-left: 10px;
     background: #FFFFFF;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    display: inline-block;
+    //display: inline-block;
     margin-bottom: 37px;
-    &:hover .pizza-body {
+    &:hover {
       background: url("../../public/images/bg-pizza.png");
       background-size: cover;
       transition: background 0.5s linear;
@@ -74,13 +80,17 @@ $caption_text: Cera Pro, sans-serif;
       }
     }
 
-    .pizza-body {
-      padding: 35px 19px 27px 19px;
-    }
+    //.pizza-body {
+    //  padding: 35px 19px 27px 19px;
+    //  display: flex;
+    //  justify-content: space-around;
+    //  flex-direction: column;
+    //}
 
     .image {
-      max-width: 290px;
-      max-height: 214px;
+      //max-width: 214px;
+      width: 100%;
+      //max-height: 214px;
     }
 
     .title {
@@ -94,6 +104,9 @@ $caption_text: Cera Pro, sans-serif;
       color: #000000;
       margin-bottom: 62px;
       position: relative;
+      max-width: 235px;
+      margin-left: auto;
+      margin-right: auto;
       &:after {
         content: "";
         width: 55px;
@@ -102,7 +115,7 @@ $caption_text: Cera Pro, sans-serif;
         left: 0;
         right: 0;
         margin: auto;
-        bottom: -145%;
+        bottom: -32px;
         display: inline-block;
         position: absolute;
       }
@@ -118,12 +131,17 @@ $caption_text: Cera Pro, sans-serif;
       color: #000000;
       max-width: 235px;
       margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .info {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 235px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .line-first {
@@ -151,6 +169,7 @@ $caption_text: Cera Pro, sans-serif;
 
     .button {
       margin-top: 18px;
+      margin-bottom: 18px;
       .btn {
         font-family: $font_text;
         font-style: normal;
@@ -306,7 +325,7 @@ $caption_text: Cera Pro, sans-serif;
   @media (max-width: 768px) {
     padding: 60px 0 14px 0;
     .caption {
-      font-size: 38px;
+      font-size: 30px;
       line-height: 38px;
       margin-bottom: 30px;
     }

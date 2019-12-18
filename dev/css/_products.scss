@@ -31,14 +31,18 @@ $caption_text: Cera Pro, sans-serif;
 
   .item {
     display: flex;
+    padding: 0;
+    justify-content: center;
   }
 
   .item-body {
-    padding: 115px 35px 30px 35px;
+    //padding: 115px 35px 30px 35px;
     background: #FFFFFF;
-    //display: flex;
-    //justify-content: center;
-    //flex-direction: column;
+    width: 319px;
+    //height: 319px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     .title {
       position: relative;
       font-family: $font_text;
@@ -49,7 +53,8 @@ $caption_text: Cera Pro, sans-serif;
       text-align: center;
       text-transform: uppercase;
       color: #000000;
-      margin-bottom: 104px;
+      margin-top: 65px;
+      //margin-bottom: 104px;
       &:before {
         content: "";
         display: inline-block;
@@ -122,17 +127,17 @@ $caption_text: Cera Pro, sans-serif;
     }
   }
 
-  .item.alco .item-body {
-    padding: 103px 26px 30px 26px;
-  }
-
-  .item.milk .item-body {
-    padding: 105px 24px 30px 25px;
-  }
-
-  .item.veg .item-body {
-    padding-top: 103px;
-  }
+  //.item.alco .item-body {
+  //  padding: 103px 26px 30px 26px;
+  //}
+  //
+  //.item.milk .item-body {
+  //  padding: 105px 24px 30px 25px;
+  //}
+  //
+  //.item.veg .item-body {
+  //  padding-top: 103px;
+  //}
 
   ////media
 
@@ -148,7 +153,7 @@ $caption_text: Cera Pro, sans-serif;
   @media (max-width: 768px) {
     padding: 60px 0 60px 0;
     .caption {
-      font-size: 38px;
+      font-size: 30px;
       line-height: 38px;
       margin-bottom: 30px;
     }

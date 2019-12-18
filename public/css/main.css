@@ -315,7 +315,7 @@
       max-height: 100%; }
     .banner .text-first {
       bottom: 8%;
-      right: 4%; }
+      right: 7%; }
       .banner .text-first .title {
         font-size: 14px;
         line-height: 20px;
@@ -392,6 +392,15 @@
       max-width: 573px;
       max-height: 259px;
       margin-right: 30px; }
+    .why .about .image-play {
+      max-width: 68px;
+      max-height: 68px;
+      position: absolute;
+      top: calc(50% - 34px);
+      left: calc(50% - 34px); }
+      .why .about .image-play:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); }
     .why .about .about-text {
       font-family: "Montserrat", sans-serif;
       font-style: normal;
@@ -515,7 +524,7 @@
     .why {
       padding: 60px 0 60px 0; }
       .why .caption {
-        font-size: 38px;
+        font-size: 30px;
         margin: 0 0 30px;
         line-height: 38px; }
       .why .about {
@@ -549,57 +558,61 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .pizzas .pizza-card:hover {
     cursor: pointer; }
   .pizzas .pizza-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
     margin-right: 10px;
     margin-left: 10px;
     background: #FFFFFF;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    display: inline-block;
     margin-bottom: 37px; }
-    .pizzas .pizza-card:hover .pizza-body {
+    .pizzas .pizza-card:hover {
       background: url("../../public/images/bg-pizza.png");
       background-size: cover;
       -webkit-transition: background 0.5s linear;
       transition: background 0.5s linear;
       color: #FFFFFF; }
-      .pizzas .pizza-card:hover .pizza-body .title {
+      .pizzas .pizza-card:hover .title {
         color: #FFFFFF;
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease; }
-        .pizzas .pizza-card:hover .pizza-body .title:after {
+        .pizzas .pizza-card:hover .title:after {
           background: #FFFFFF;
           -webkit-transition: 0.5s ease;
           transition: 0.5s ease; }
-      .pizzas .pizza-card:hover .pizza-body .composition {
+      .pizzas .pizza-card:hover .composition {
         color: #FFFFFF;
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease; }
-      .pizzas .pizza-card:hover .pizza-body .text {
+      .pizzas .pizza-card:hover .text {
         color: #FFFFFF;
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease; }
-      .pizzas .pizza-card:hover .pizza-body .button .btn {
+      .pizzas .pizza-card:hover .button .btn {
         background: #27AF25;
         color: #FFFFFF;
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease; }
-        .pizzas .pizza-card:hover .pizza-body .button .btn:before {
+        .pizzas .pizza-card:hover .button .btn:before {
           background: #27AF25;
           -webkit-transition: 0.5s ease;
           transition: 0.5s ease; }
-    .pizzas .pizza-card .pizza-body {
-      padding: 35px 19px 27px 19px; }
     .pizzas .pizza-card .image {
-      max-width: 290px;
-      max-height: 214px; }
+      width: 100%; }
     .pizzas .pizza-card .title {
       font-family: "Montserrat", sans-serif;
       font-style: normal;
@@ -610,7 +623,10 @@
       text-transform: uppercase;
       color: #000000;
       margin-bottom: 62px;
-      position: relative; }
+      position: relative;
+      max-width: 235px;
+      margin-left: auto;
+      margin-right: auto; }
       .pizzas .pizza-card .title:after {
         content: "";
         width: 55px;
@@ -619,7 +635,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        bottom: -145%;
+        bottom: -32px;
         display: inline-block;
         position: absolute; }
     .pizzas .pizza-card .composition {
@@ -631,7 +647,9 @@
       text-transform: uppercase;
       color: #000000;
       max-width: 235px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto; }
     .pizzas .pizza-card .info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -641,7 +659,10 @@
       justify-content: space-between;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      max-width: 235px;
+      margin-left: auto;
+      margin-right: auto; }
     .pizzas .pizza-card .line-first {
       height: 1px;
       background: #939393;
@@ -660,7 +681,8 @@
       line-height: 200%;
       color: #000000; }
     .pizzas .pizza-card .button {
-      margin-top: 18px; }
+      margin-top: 18px;
+      margin-bottom: 18px; }
       .pizzas .pizza-card .button .btn {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -790,7 +812,7 @@
     .pizzas {
       padding: 60px 0 14px 0; }
       .pizzas .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px; }
       .pizzas .image-clock {
@@ -971,7 +993,7 @@
     .delivery {
       padding: 60px 0 30px 0; }
       .delivery .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px; } }
 
@@ -1001,10 +1023,23 @@
   .products .item {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .products .item-body {
-    padding: 115px 35px 30px 35px;
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    width: 319px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     .products .item-body .title {
       position: relative;
       font-family: "Montserrat", sans-serif;
@@ -1015,7 +1050,7 @@
       text-align: center;
       text-transform: uppercase;
       color: #000000;
-      margin-bottom: 104px; }
+      margin-top: 65px; }
       .products .item-body .title:before {
         content: "";
         display: inline-block;
@@ -1083,12 +1118,6 @@
           position: absolute;
           -webkit-clip-path: polygon(0 100%, 2% 0, 4% 100%, 4% 100%, 6% 0, 8% 100%, 8% 100%, 10% 0, 12% 100%, 12% 100%, 14% 0, 16% 100%, 16% 100%, 18% 0, 20% 100%, 20% 100%, 22% 0, 24% 100%, 24% 100%, 26% 0, 28% 100%, 28% 100%, 30% 0, 32% 100%, 32% 100%, 34% 0, 36% 100%, 36% 100%, 38% 0, 40% 100%, 40% 100%, 42% 0, 44% 100%, 44% 100%, 46% 0, 48% 100%, 48% 100%, 50% 0, 52% 100%, 52% 100%, 54% 0, 56% 100%, 56% 100%, 58% 0, 60% 100%, 60% 100%, 62% 0, 64% 100%, 64% 100%, 66% 0, 68% 100%, 68% 100%, 70% 0, 72% 100%, 72% 100%, 74% 0, 76% 100%, 76% 100%, 78% 0, 80% 100%, 80% 100%, 82% 0, 84% 100%, 84% 100%, 86% 0, 88% 100%, 88% 100%, 90% 0, 92% 100%, 92% 100%, 94% 0, 96% 100%, 96% 100%, 98% 0, 100% 100%);
           clip-path: polygon(0 100%, 2% 0, 4% 100%, 4% 100%, 6% 0, 8% 100%, 8% 100%, 10% 0, 12% 100%, 12% 100%, 14% 0, 16% 100%, 16% 100%, 18% 0, 20% 100%, 20% 100%, 22% 0, 24% 100%, 24% 100%, 26% 0, 28% 100%, 28% 100%, 30% 0, 32% 100%, 32% 100%, 34% 0, 36% 100%, 36% 100%, 38% 0, 40% 100%, 40% 100%, 42% 0, 44% 100%, 44% 100%, 46% 0, 48% 100%, 48% 100%, 50% 0, 52% 100%, 52% 100%, 54% 0, 56% 100%, 56% 100%, 58% 0, 60% 100%, 60% 100%, 62% 0, 64% 100%, 64% 100%, 66% 0, 68% 100%, 68% 100%, 70% 0, 72% 100%, 72% 100%, 74% 0, 76% 100%, 76% 100%, 78% 0, 80% 100%, 80% 100%, 82% 0, 84% 100%, 84% 100%, 86% 0, 88% 100%, 88% 100%, 90% 0, 92% 100%, 92% 100%, 94% 0, 96% 100%, 96% 100%, 98% 0, 100% 100%); }
-  .products .item.alco .item-body {
-    padding: 103px 26px 30px 26px; }
-  .products .item.milk .item-body {
-    padding: 105px 24px 30px 25px; }
-  .products .item.veg .item-body {
-    padding-top: 103px; }
   @media (max-width: 1306px) {
     .products .products-inner {
       -webkit-box-pack: center;
@@ -1103,7 +1132,7 @@
     .products {
       padding: 60px 0 60px 0; }
       .products .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px; } }
   @media (max-width: 690px) {
@@ -1293,7 +1322,7 @@
     .fridge {
       padding: 60px 0 30px 0; }
       .fridge .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px; }
       .fridge .list.first {
@@ -1495,9 +1524,9 @@
     .corporate {
       padding: 60px 0 60px 0; }
       .corporate .images .image {
-        margin-bottom: 15px; }
+        margin: 0; }
       .corporate .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px;
         margin-top: 30px; } }
@@ -1604,7 +1633,7 @@
     .magazine {
       padding: 60px 0 30px 0; }
       .magazine .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px; }
       .magazine .title {
@@ -1766,7 +1795,7 @@
     .reviews {
       padding: 60px 0 75px 0; }
       .reviews .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px; } }
   @media (max-width: 460px) {
@@ -1926,7 +1955,7 @@
           color: #27AF25; }
   @media (max-width: 1120px) {
     .footer form {
-      padding: 44px 40px 47px 40px; } }
+      padding: 44px 30px 47px 30px; } }
   @media (max-width: 991px) {
     .footer .form {
       display: -webkit-box;
@@ -1940,7 +1969,7 @@
     .footer {
       padding: 60px 0 60px 0; }
       .footer .caption {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 38px;
         margin-bottom: 30px;
         margin-top: 30px; } }
