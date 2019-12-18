@@ -170,5 +170,25 @@ $caption_text: Cera Pro, sans-serif;
       margin: 0 auto;
     }
   }
+
+  ///media
+
+  @media (max-width: 991px) {
+    .pizzas-inner {
+      justify-content: space-evenly;
+    }
+    .item {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0 30px 0;
+    .caption {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 30px;
+    }
+  }
 }
 //////////////////////////DELIVERY END////////////////////////

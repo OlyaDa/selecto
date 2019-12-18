@@ -23,7 +23,19 @@ $caption_text: Cera Pro, sans-serif;
     margin-bottom: 83px;
   }
 
+  .pizzas-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .pizza-card:hover {
+    cursor: pointer;
+  }
+
   .pizza-card {
+    margin-right: 10px;
+    margin-left: 10px;
     background: #FFFFFF;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     display: inline-block;
@@ -175,9 +187,7 @@ $caption_text: Cera Pro, sans-serif;
   .image-clock {
     width: 58px;
     height: 58px;
-    margin: 0 auto;
-    margin-bottom: 34px;
-    //position: relative;
+    margin: 0 auto 34px;
     &:before {
       content: "";
       display: inline-block;
@@ -248,6 +258,7 @@ $caption_text: Cera Pro, sans-serif;
       background: #27AF25;
       border-radius: 10px;
       margin-left: 14px;
+      border: 1px solid #27AF25;
       .btn {
         font-family: $font_text;
         font-style: normal;
@@ -259,8 +270,77 @@ $caption_text: Cera Pro, sans-serif;
         color: #FFFFFF;
         padding: 11px 70px 11px 70px;
       }
+      &:hover {
+        background: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        .btn {
+          color: #27AF25;
+        }
+      }
     }
   }
+
+  ///media
+
+  @media (max-width: 1269px) {
+    .pizzas-inner {
+      justify-content: space-evenly;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .order-main {
+      display: flex;
+      justify-content: center;
+    }
+
+    .free-caption {
+      text-align: center;
+    }
+
+    .free-text {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0 14px 0;
+    .caption {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 30px;
+    }
+    .image-clock {
+      margin-bottom: 30px;
+    }
+    .free-caption {
+      font-size: 34px;
+      line-height: 38px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .free-text {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 570px) {
+    .order-main {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin-bottom: 30px;
+      }
+
+      button {
+        width: 298px;
+        margin: 0;
+      }
+    }
+  }
+
 }
 
 //////////////////////////PIZZAS END////////////////////////

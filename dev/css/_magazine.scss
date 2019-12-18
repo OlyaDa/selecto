@@ -33,6 +33,18 @@ $caption_text: Cera Pro, sans-serif;
     max-width: 383px;
     max-height: 339px;
     position: relative;
+    margin: auto;
+    border: 1px solid #fff;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
   }
 
   .text {
@@ -50,6 +62,7 @@ $caption_text: Cera Pro, sans-serif;
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 9;
 
     &:before {
       content: "";
@@ -90,6 +103,44 @@ $caption_text: Cera Pro, sans-serif;
   .text.third {
     width: 333px;
     height: 69px;
+  }
+
+  ///media
+
+  @media (max-width: 991px) {
+    .item {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0 30px 0;
+    .caption {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 30px;
+    }
+
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .text.first {
+      width: 285px;
+      height: 68px;
+    }
+
+    .text.second {
+      width: 285px;
+      height: 92px;
+    }
+
+    .text.third {
+      width: 285px;
+      height: 92px;
+    }
   }
 }
 

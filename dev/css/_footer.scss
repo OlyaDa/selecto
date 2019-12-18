@@ -1,288 +1,255 @@
 //////////////////////////FOOTER BEGIN////////////////////////
 
-$font_text: 'Open Sans', sans-serif;
+$font_text: 'Montserrat', sans-serif;
+$caption_text: Cera Pro, sans-serif;
 
 .footer {
+  padding: 74px 0 98px 0;
 
-  background-size: cover;
-  padding: 60px 0 53px 0;
-  overflow: hidden;
-  position: relative;
-
-  .bottom-t {
-    display: block;
-    background-color: black;
-    opacity: 0.1;
-    height: 20px;
-    width: 37px;
-    position: absolute;
-    right: 11%;
-    top: 0;
+  .footer-inner {
+    display: flex;
+    align-items: center;
   }
 
   .caption {
-    font-family: $font_text;
+    font-family: $caption_text;
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 38px;
-    text-transform: uppercase;
-    color: #FAFAFA;
-    margin-bottom: 16px;
-  }
-
-  .form-title {
-    font-family: $font_text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #FAFAFA;
-    margin-bottom: 20px;
-  }
-
-  input, textarea {
-    padding: 3px 16px;
-    font-family: $font_text;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 28px;
-    align-items: center;
-    color: #FAFAFA !important;
-    width: 384px;
-    border: 2px solid #FAFAFA;
-    background: transparent;
-    margin-bottom: 16px;
-  }
-
-  ::-webkit-input-placeholder {
-    -webkit-text-security: none;
-    color: #FAFAFA;
-    pointer-events: none !important;
-  }
-
-  textarea {
-    padding: 3px 16px 3px 16px;
-  }
-
-  button {
-    //margin-left: 9px;
-    margin-top: 5px;
-    background-color: transparent;
-    border: none;
-  }
-
-  .btn {
-    font-family: $font_text;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    align-items: center;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 60px;
     text-align: center;
-    color: #0059CB;
-    //background-color: #FFFFFF;
-    position: relative;
-    padding: 15px 40px;
-    max-width: 100%;
-    border: 2px solid #fff;
-    border-radius: 0;
-    z-index: 9;
-    background-color: #FFFFFF;
+    color: #097D07;
+    margin-bottom: 57px;
+  }
 
-    &:before {
-      z-index: -2;
-      border: 2px solid #fff;
-      position: absolute;
-      content: '';
-      top: 5px;
-      left: -10px;
-      bottom: -10px;
-      right: 4px;
-    }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
 
-    &:after {
-      z-index: -2;
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #fff;
-    }
-    &:hover {
-      &:after,  &:before {
-        display: none;
+  .social {
+    padding-right: 82px;
+    border-right: 1px solid #464646;
+
+    .social-block {
+      display: flex;
+      align-items: center;
+      &:hover {
+        text-decoration: none;
       }
-      background-color: #FFFFFF;
-      color: #0059CB;
-      transition: .3s;
+    }
+    .image {
+      max-width: 44px;
+      max-height: 44px;
+      margin-right: 14px;
+    }
+
+    .social-text {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 195.5%;
+      color: #000000;
+    }
+
+    .facebook {
+      margin-bottom: 63px;
+    }
+
+    .instagram {
+      margin-bottom: 41px;
     }
   }
 
-  .footer-title {
-    font-family: $font_text;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    color: #FAFAFA;
-    margin-bottom: 0;
-  }
+  .phones {
+    padding-left: 87px;
 
-  .text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #FAFAFA;
-    margin-bottom: 11px;
-    span {
+    .phone {
       display: block;
     }
-  }
 
-  .follow-ours-small {
-    display: none;
-  }
+    .phones-block {
+      margin-bottom: 22px;
+    }
 
-  .text.bottom {
-    margin-bottom: 23px;
-  }
+    .contact-title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 195.5%;
+      color: #000000;
+      margin-bottom: 5px;
+    }
 
-  .footer-title.follow {
-    margin-bottom: 16px;
-  }
+    .contact-text, .contact-text a {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 195.5%;
+      color: #000000;
+    }
 
-  .image-icon {
-    max-width: 24px;
-    max-height: 24px;
-    margin-right: 12px;
-    display: inline-block;
-  }
-
-  .footer-title.tel {
-    margin-top: 57px;
-    margin-left: 0;
-    margin-bottom: 6px;
-  }
-
-  .phone {
-    display: block;
-    font-family: $font_text;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #FAFAFA;
-    margin-bottom: 0;
-    &:hover {
-      text-decoration: none;
+    .contact-text a {
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
-  .line {
-    background-color: rgba(228, 228, 228, 0.2);
-    z-index: 1;
+  form {
+    display: inline-block;
+    background: url("../../public/images/bg-form.png");
+    background-size: cover;
+    padding: 44px 85px 47px 85px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    .form-title {
+      font-family: $font_text;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #2D2D2D;
+      margin-bottom: 29px;
+    }
+
+    input {
+      font-family: "Comfortaa", sans-serif;
+      background: transparent;
+      border: 1px solid #898989;
+      border-radius: 10px;
+      padding: 16px 26px;
+      width: 367px;
+      display: block;
+      margin-bottom: 33px;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #2D2D2D;
+    }
+
+    textarea {
+      width: 367px;
+      height: 90px;
+      display: block;
+      font-family: "Comfortaa", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+      margin-left: auto;
+      margin-right: auto;
+      color: #2D2D2D;
+      border: 1px solid #898989;
+      border-radius: 10px;
+      padding: 16px 14px 32px 26px;
+      background: transparent;
+      margin-top: 3px;
+    }
+
+    button {
+      max-width: 367px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #0B9708;
+      border-radius: 10px;
+      border: 1px solid #27AF25;
+      .btn {
+        font-family: $font_text;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-radius: 10px;
+        padding: 14px 40px;
+      }
+      &:hover {
+        background: #DDDDDD;
+        border: 1px solid #DDDDDD;
+        .btn {
+          color: #27AF25;
+        }
+      }
+    }
   }
 
   ///media
 
-  @media (max-width: 1430px) {
- .bottom-t {
-   display: none;
- }
+  @media (max-width: 1120px) {
+    form {
+      padding: 44px 40px 47px 40px;
+    }
   }
 
   @media (max-width: 991px) {
-    input, textarea {
-      width: 100%;
-    }
-    .btn {
-      padding: 15px 30px;
+    .form {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
     }
   }
 
-  @media (max-width: 767px) {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  @media (max-width: 768px) {
+    padding: 60px 0 60px 0;
 
-    form {
-      display: flex;
+    .caption {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 530px) {
+    .social {
+      padding-right: 15px;
+    }
+     .phones {
+      padding-left: 15px;
+    }
+  }
+
+  @media (max-width: 470px) {
+    form input {
+      width: 245px;
+    }
+    form button {
+      width: 245px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .contact {
       flex-direction: column;
       align-items: center;
     }
-    padding: 41px 0 53px 0;
-    .form-title {
-      font-size: 16px;
-      line-height: 22px;
-      margin-bottom: 22px;
-    }
-    .caption {
-      margin-bottom: 1px;
+
+    .form {
+      padding-top: 0;
     }
 
-    input, textarea {
-      font-size: 14px;
-      line-height: 28px;
-      max-width: 384px;
-      padding: 4px 12px;
+    .social {
+      border-right: none;
+      .facebook, .instagram, .youtube {
+        margin-bottom: 22px;
+      }
     }
-    textarea {
-      height: 77px;
-    }
-
-    button {
-      margin: 11px 0 46px 0;
-      max-width: 384px;
-    }
-
-    .btn {
-      font-size: 16px;
-
-      padding: 14px 38px;
-      line-height: 22px;
-    }
-
-    .caption.contact {
-      margin-bottom: 14px;
-    }
-    .footer-title, .text {
-      font-size: 16px;
-      line-height: 26px;
-    }
-    .footer-title {
-      margin-bottom: 8px;
-    }
-    .follow-ours-desk {
-      display: none;
-    }
-    .follow-ours-small {
-      display: block;
-      margin-top: 23px;
-    }
-    .text.bottom {
-      margin-bottom: -30px;
-    }
-    .footer .phone {
-      font-size: 16px;
-      line-height: 22px;
-    }
-  }
-
-  @media (max-width: 410px) {
-    text-align: left;
-    button {
-      width: 100%;
-    }
-    input, textarea {
-      font-size: 14px;
-      line-height: 28px;
-      width: 100%;
-      padding: 4px 12px;
+    .phones {
+      text-align: center;
     }
   }
 }

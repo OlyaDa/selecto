@@ -12,8 +12,10 @@
     <meta property="og:site_name" content="teleport-plus"/>
     <title>Selecto</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
           rel="stylesheet">
 
@@ -28,73 +30,72 @@
 
 <body>
 <div class="wrapper">
-<div class="header-banner">
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="top">
-                    <div class="logo-address">
-                        <div class="logo">
-                            <a href="#">
-                                <img class="logo" src="images/logo.png" alt="logo">
-                            </a>
+    <div class="header-banner">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="top">
+                        <div class="logo-address">
+                            <div class="logo">
+                                <a href="#">
+                                    <img class="logo" src="images/logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="address">
+                                <p class="text-uppercase"> г. Киев вул. Саперне Поле 14/55</p>
+                            </div>
                         </div>
-                        <div class="address">
-                            <p class="text-uppercase"> г. Киев вул. Саперне Поле 14/55</p>
-                        </div>
+
+                        <span class="toggle-menu">
+                        <span></span>
+                    </span>
                     </div>
 
-                    <span class="toggle-menu">
-                            <span></span>
-                        </span>
+                    <nav class="main-nav">
+                        <ul class=" menu list-reset">
+                            <li><a href="#about" class="nav-link-new">О нас</a></li>
+                            <li><a href="#deliver" class="nav-link-new">Доставка на дом</a></li>
+                            <li><a href="#products" class="nav-link-new">Продукты</a></li>
+                            <li><a href="#corporate" class="nav-link-new">Продукты на корпоратив</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <nav class="main-nav">
-                    <ul class=" menu list-reset">
-                        <li><a href="#" class="nav-link-new">О нас</a></li>
-                        <li><a href="#" class="nav-link-new">Доставка на дом</a></li>
-                        <li><a href="#" class="nav-link-new">Продукты</a></li>
-                        <li><a href="#" class="nav-link-new">Продукты на корпоратив</a></li>
-                    </ul>
-                </nav>
             </div>
-        </div>
-    </header>
+        </header>
+        <!--.......................BANNER.......................-->
 
-    <!--.......................BANNER.......................-->
-
-    <div class="banner">
-        <div class="container-fluid">
-            <div class="banner-inner">
-                <div class="image-big">
-                    <img src="images/banner11.png" alt="">
-                </div>
-                <div class="images">
-                    <div class="image">
-                        <img src="images/banner2.png" alt="">
-                        <div class="text-first">
-                            <h3 class="title">
-                                САМАЯ БЫСТРАЯ <br> ДОСТАВКА ПИЦЦЫ, <br> НА "РАЙОН"
+        <div class="banner">
+            <div class="container-fluid">
+                <div class="banner-inner">
+                    <div class="image-big">
+                        <img src="images/banner11.png" alt="">
+                    </div>
+                    <div class="images">
+                        <div class="image">
+                            <img src="images/banner2.png" alt="">
+                            <div class="text-first">
+                                <h3 class="title">
+                                    САМАЯ БЫСТРАЯ <br> ДОСТАВКА ПИЦЦЫ, <br> НА "РАЙОН"
+                                </h3>
+                                <p class="sub-title">
+                                    Паперони
+                                </p>
+                                <p class="text">
+                                    Грибы, Тесто, Томаты, маслины,
+                                    мясо курицы, перец
+                                </p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="images/banner3.png" alt="">
+                            <h3 class="text-second">
+                                ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ МИРОВЫХ БРЕНДОВ
                             </h3>
-                            <p class="sub-title">
-                                Паперони
-                            </p>
-                            <p class="text">
-                                Грибы, Тесто, Томаты, маслины,
-                                мясо курицы, перец
-                            </p>
                         </div>
-                    </div>
-                    <div class="image">
-                        <img src="images/banner3.png" alt="">
-                        <h3 class="text-second">
-                            ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ МИРОВЫХ БРЕНДОВ
-                        </h3>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!--.......................MAIN.......................-->
@@ -103,17 +104,18 @@
 
         <!--.......................WHY SELECTO MARKET?.......................-->
 
-        <section class="why">
+        <section class="why" id="about">
             <div class="container">
                 <h2 class="caption">
                     ПОЧЕМУ SELECTO MARKET?
                 </h2>
                 <div class="about">
                     <div class="image">
-                        <img src="images/video.png" alt="">
+
                         <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                            <img src="images/video.png" alt="">
                             <!--<div class="image-play">-->
-                                <!--<img src="images/play.png" alt="">-->
+                            <!--<img src="images/play.png" alt="">-->
                             <!--</div>-->
                         </a>
                     </div>
@@ -134,15 +136,15 @@
                             Приглашаем ВАС к нам в гости
                         </h4>
                         <div class="address-time">
-                           <div>
+                            <div>
                                 <p class="contact-title">
                                     Адрес:
                                 </p>
                                 <p class="contact-text">
                                     Киев, Киевская 25
                                 </p>
-                           </div>
-                            <div class="col-md-6">
+                            </div>
+                            <div>
                                 <p class="contact-title">
                                     Время работы:
                                 </p>
@@ -184,8 +186,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="image">
-                        <img src="images/map.png" alt="">
+                    <!--<div class="image">-->
+                    <!--<img src="images/map.png" alt="">-->
+                    <!--</div>-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5335.057346303622!2d30.485790767551773!3d50.45964072690475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C6J9GP0L3RltCy0YHRjNC60LA!3m2!1d50.461178999999994!2d30.483670999999998!4m5!1s0x40d4ce65bb637e0d%3A0x15a04ce32f6333ef!2z0JHQtdGF0YLQtdGA0LXQstGB0LrQuNC5INC_0LXRgC4sIDE00JUsINCa0LjQtdCyLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwMjAwMA!3m2!1d50.459371499999996!2d30.4965899!5e0!3m2!1sru!2sua!4v1574811075804!5m2!1sru!2sua"
+                                width="933" height="394" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -199,266 +205,267 @@
                     У НАС ВЫ ВСЕГДА СМОЖЕТЕ ЗАКАЗАТЬ ПИЦЦУ
                 </h2>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza1.png" alt="">
+                <div class="pizzas-inner">
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza1.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
                             </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
+                    <!--</div>-->
 
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza2.png" alt="">
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza2.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
                             </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
+                    <!--</div>-->
 
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza3.png" alt="">
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza3.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
                             </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
+                    <!--</div>-->
 
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza4.png" alt="">
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza4.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
                             </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
                             </div>
                         </div>
                     </div>
+                    <!--</div>-->
 
+                    <!--</div>-->
+
+                    <!--<div class="row">-->
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza1.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
+                            </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza2.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
+                            </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza3.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
+                            </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--</div>-->
+
+                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                    <div class="pizza-card">
+                        <div class="image">
+                            <img src="images/pizza4.png" alt="">
+                        </div>
+                        <div class="pizza-body">
+                            <h4 class="title">
+                                Паперони
+                            </h4>
+                            <p class="composition">
+                                Грибы, Тесто, Томаты, маслины,
+                                мясо курицы, перец
+                            </p>
+                            <div class="info">
+                                <span class="text text-uppercase">Размер</span>
+                                <span class="line-first"></span>
+                                <span class="text">52см</span>
+                            </div>
+                            <div class="info">
+                                <span class="text text-uppercase">Выход</span>
+                                <span class="line-second"></span>
+                                <span class="text">300г</span>
+                            </div>
+                            <div class="button">
+                                <a class="btn" href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza1.png" alt="">
-                            </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza2.png" alt="">
-                            </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza3.png" alt="">
-                            </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="pizza-card">
-                            <div class="image">
-                                <img src="images/pizza4.png" alt="">
-                            </div>
-                            <div class="pizza-body">
-                                <h4 class="title">
-                                    Паперони
-                                </h4>
-                                <p class="composition">
-                                    Грибы, Тесто, Томаты, маслины,
-                                    мясо курицы, перец
-                                </p>
-                                <div class="info">
-                                    <span class="text text-uppercase">Размер</span>
-                                    <span class="line-first"></span>
-                                    <span class="text">52см</span>
-                                </div>
-                                <div class="info">
-                                    <span class="text text-uppercase">Выход</span>
-                                    <span class="line-second"></span>
-                                    <span class="text">300г</span>
-                                </div>
-                                <div class="button">
-                                    <a class="btn" href="#">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="clock" id="deliver">
+                    <div class="image-clock">
+                        <img src="images/clock.png" alt="">
                     </div>
                 </div>
-
-                    <div class="clock">
-                        <div class="image-clock">
-                            <img src="images/clock.png" alt="">
-                        </div>
-                    </div>
 
                 <div class="row free-shipping">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <h2 class="free-caption">
                             БЕСПЛАТНО ДОСТАВИМ ПИЦЦУ В ТЕЧЕНИИ 20 МИН
                         </h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <form class="order-main">
-                            <input placeholder="+380 ________________________" type="tel" name="phone" class="phoneidcl" required>
+                            <input placeholder="+380 ________________________" type="tel" name="phone" class="phoneidcl"
+                                   required>
                             <input name="order" type="hidden"
                                    value="Бесплатно доставим пиццу в течении 20 мин">
                             <button class="disbutt" disabled>
@@ -487,9 +494,9 @@
                 <h2 class="caption">
                     ПОЧЕМУ ИМЕННО НАША ДОСТАВКА ПИЦЦЫ?
                 </h2>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="item clock">
                             <div class="image">
                                 <img src="images/clock-deliver.png" alt="">
@@ -504,7 +511,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="item value">
                             <div class="image">
                                 <img src="images/value-deliver.png" alt="">
@@ -518,7 +525,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="item cook">
                             <div class="image">
                                 <img src="images/cooking-deliver.png" alt="">
@@ -538,7 +545,7 @@
 
         <!--.......................PRODUCTS.......................-->
 
-        <section class="products">
+        <section class="products" id="products">
             <div class="container">
                 <h2 class="caption">
                     У НАС ВСЕГДА ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ МИРОВЫХ БРЕНДОВ
@@ -573,7 +580,7 @@
                         </div>
                     </div>
 
-                    <div class="item">
+                    <div class="item midl">
                         <div class="item-body">
                             <h4 class="title">
                                 импорт
@@ -587,7 +594,7 @@
                         </div>
                     </div>
 
-                    <div class="item alco">
+                    <div class="item alco midl">
                         <div class="item-body">
                             <h4 class="title">
                                 алкогольные и <br> безалкогольные напитки
@@ -642,32 +649,32 @@
                     НЕТ ВРЕМЕНИ СХОДИТЬ В МАГАЗИН, А ХОЛОДИЛЬНИК СОВСЕМ ПУСТ?
                 </h2>
 
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 item">
                         <div class="image m-auto">
                             <img src="images/fridge1.png" alt="">
+                            <h4 class="title">
+                                ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
+                            </h4>
                         </div>
-                        <h4 class="title">
-                            ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
-                        </h4>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6 item">
                         <div class="image m-auto">
                             <img src="images/fridge2.png" alt="">
+                            <h4 class="title">
+                                ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
+                            </h4>
                         </div>
-                        <h4 class="title">
-                            ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
-                        </h4>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6 item">
                         <div class="image m-auto">
                             <img src="images/fridge3.png" alt="">
+                            <h4 class="title">
+                                НАШ КУРЬЕР В ТЕЧЕНИИ 20 МИН ОПЕРАТИВНО ДОСТАВИТ ВСЕ НЕОБХОДИМЫЕ ПРОДУКТЫ ВАМ ПО АДРЕСУ
+                            </h4>
                         </div>
-                        <h4 class="title">
-                            НАШ КУРЬЕР В ТЕЧЕНИИ 20 МИН ОПЕРАТИВНО ДОСТАВИТ ВСЕ НЕОБХОДИМЫЕ ПРОДУКТЫ ВАМ ПО АДРЕСУ
-                        </h4>
                     </div>
 
                 </div>
@@ -679,14 +686,15 @@
                 </div>
 
                 <div class="row free-shipping">
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <h2 class="free-caption">
                             ОСТАВЬТЕ ХЛОПОТЫ ПО СОСТАВЛЕНИЮ СПИСКА И ДОСТАВКИ ПРОДУКТОВ ДОМОЙ НАМ
                         </h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 col-md-12">
                         <form class="order-main">
-                            <input placeholder="+380 ________________________" type="tel" name="phone" class="phoneidcl" required>
+                            <input placeholder="+380 ________________________" type="tel" name="phone" class="phoneidcl"
+                                   required>
                             <input name="order" type="hidden"
                                    value="Доставка продуктов домой">
                             <button class="disbutt" disabled>
@@ -696,7 +704,7 @@
                     </div>
                 </div>
 
-                <div class="list">
+                <div class="list second">
                     <div class="image-list">
                         <img src="images/list.png" alt="">
                     </div>
@@ -709,13 +717,13 @@
 
         <section class="corporate">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row corporate-inner">
+                    <div class="col-lg-6">
                         <div class="image">
                             <img src="images/cafe.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-lg-6 d-flex align-items-center">
                         <h2 class="cafe-caption">
                             В зоне кафе можно попробовать нашу
                             фирменную пиццу, стейк или свежую выпечку с чашкой кофе
@@ -723,13 +731,13 @@
                     </div>
                 </div>
 
-                <h2 class="caption">
+                <h2 class="caption" id="corporate">
                     НАМЕЧАЕТСЯ КОРПОРАТИВ? ПОМОЖЕМ С ПОДБОРО И ДОСТАВКОЙ ПРОДУКТОВОЙ КОРЗИНЫ
                 </h2>
 
 
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-xl-7 col-lg-12">
                         <div class="images">
                             <div class="image">
                                 <img src="images/corpor1.png" alt="">
@@ -760,7 +768,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-xl-5 col-lg-12 form">
                         <form class="order-main">
                             <h4 class="form-title">
                         <span id="customTextForm">
@@ -769,7 +777,8 @@
                             </h4>
                             <input placeholder="ИМЯ" type="text" name="name" required>
                             <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
-                            <textarea placeholder="Комментарий (бюджет, колличество людей)" type="text" name="text"></textarea>
+                            <textarea placeholder="Комментарий (бюджет, колличество людей)" type="text"
+                                      name="text"></textarea>
                             <input name="order" type="hidden"
                                    value="ЗАПОЛНИТЕ ФОРМУ НИЖЕ И НАШ МЕНЕДЖЕР ПОМОЖЕТ СОСТАВИТЬ ВАМ СПИСОК ПРОДУКТОВ И ДОСТАВИТЬ ЧЕТКО ПО АДРЕСУ">
 
@@ -792,14 +801,14 @@
                     НЕТ ВРЕМЕНИ СХОДИТЬ В МАГАЗИН, А КОРПОРАТИВ УЖЕ СКОРО?
                 </h2>
                 <p class="title">
-                    ОСТАВЬТЕ ХЛОПОТЫ ПО СОСТАВЛЕНИЕ СПИСКА И ДОСТАВКОЙ ПРОДУКТОВ  НАМ
+                    ОСТАВЬТЕ ХЛОПОТЫ ПО СОСТАВЛЕНИЕ СПИСКА И ДОСТАВКОЙ ПРОДУКТОВ НАМ
                 </p>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="item">
                             <div class="image">
-                                <img src="images/magazine1.png" alt="">
+                                <img src="images/fridge1.png" alt="">
                             </div>
                             <h4 class="text first">
                                 ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
@@ -807,21 +816,1092 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="item">
-                            <div class="image">
-                                <img src="images/magazine2.png" alt="">
+                            <div class="image"><!doctype html>
+                                <html lang="en">
+                                <head>
+                                    <meta charset="UTF-8">
+                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    <meta property="og:type" content="website"/>
+                                    <meta property="og:title" content="GenerationLead"/>
+                                    <meta property="og:description"
+                                          content=""/>
+                                    <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.img">
+                                    <meta property="og:url" content="https://teleport-plus.com/"/>
+                                    <meta property="og:site_name" content="teleport-plus"/>
+                                    <title>Selecto</title>
+
+                                    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic"
+                                          rel="stylesheet">
+                                    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic"
+                                          rel="stylesheet">
+                                    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
+                                          rel="stylesheet">
+
+                                    <link rel="stylesheet" href="slick/slick.css">
+                                    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+                                    <link rel="stylesheet" href="css/all.min.css">
+                                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                                    <link rel="stylesheet" href="css/magnific-popup.css">
+                                    <link rel="stylesheet" href="css/normalize.css">
+                                    <link rel="stylesheet" href="css/main.css">
+                                </head>
+
+                                <body>
+                                <div class="wrapper">
+                                    <div class="header-banner">
+                                        <header class="header">
+                                            <div class="container">
+                                                <div class="header__inner">
+                                                    <div class="top">
+                                                        <div class="logo-address">
+                                                            <div class="logo">
+                                                                <a href="#">
+                                                                    <img class="logo" src="images/logo.png" alt="logo">
+                                                                </a>
+                                                            </div>
+                                                            <div class="address">
+                                                                <p class="text-uppercase"> г. Киев вул. Саперне Поле 14/55</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <span class="toggle-menu">
+                        <span></span>
+                    </span>
+                                                    </div>
+
+                                                    <nav class="main-nav">
+                                                        <ul class=" menu list-reset">
+                                                            <li><a href="#about" class="nav-link-new">О нас</a></li>
+                                                            <li><a href="#deliver" class="nav-link-new">Доставка на дом</a></li>
+                                                            <li><a href="#products" class="nav-link-new">Продукты</a></li>
+                                                            <li><a href="#corporate" class="nav-link-new">Продукты на корпоратив</a></li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <!--.......................BANNER.......................-->
+
+                                        <div class="banner">
+                                            <div class="container-fluid">
+                                                <div class="banner-inner">
+                                                    <div class="image-big">
+                                                        <img src="images/banner11.png" alt="">
+                                                    </div>
+                                                    <div class="images">
+                                                        <div class="image">
+                                                            <img src="images/banner2.png" alt="">
+                                                            <div class="text-first">
+                                                                <h3 class="title">
+                                                                    САМАЯ БЫСТРАЯ <br> ДОСТАВКА ПИЦЦЫ, <br> НА "РАЙОН"
+                                                                </h3>
+                                                                <p class="sub-title">
+                                                                    Паперони
+                                                                </p>
+                                                                <p class="text">
+                                                                    Грибы, Тесто, Томаты, маслины,
+                                                                    мясо курицы, перец
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="images/banner3.png" alt="">
+                                                            <h3 class="text-second">
+                                                                ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ МИРОВЫХ БРЕНДОВ
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--.......................MAIN.......................-->
+
+                                    <main class="content">
+
+                                        <!--.......................WHY SELECTO MARKET?.......................-->
+
+                                        <section class="why" id="about">
+                                            <div class="container">
+                                                <h2 class="caption">
+                                                    ПОЧЕМУ SELECTO MARKET?
+                                                </h2>
+                                                <div class="about">
+                                                    <div class="image">
+
+                                                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                                                            <img src="images/video.png" alt="">
+                                                            <!--<div class="image-play">-->
+                                                            <!--<img src="images/play.png" alt="">-->
+                                                            <!--</div>-->
+                                                        </a>
+                                                    </div>
+                                                    <p class="about-text">
+                                                        Приветствуем Вас! Мы — молодая, амбициозная команда будущего. Наша мечта — кардинально
+                                                        перевернуть Ваше представление о покупках, а точнее, повернуть возможности современного рынка
+                                                        продуктов к Вам лицом. Все мы хотим употреблять свежие, качественные, самые лучшие продукты по
+                                                        доступным ценам и при этом не утруждать себя бегом по супермаркетам, рынкам в попытках отыскать
+                                                        их.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="container-fluid">
+                                                <div class="contact">
+                                                    <div class="contact-desk">
+                                                        <h4 class="contact-caption">
+                                                            Приглашаем ВАС к нам в гости
+                                                        </h4>
+                                                        <div class="address-time">
+                                                            <div>
+                                                                <p class="contact-title">
+                                                                    Адрес:
+                                                                </p>
+                                                                <p class="contact-text">
+                                                                    Киев, Киевская 25
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="contact-title">
+                                                                    Время работы:
+                                                                </p>
+                                                                <p class="contact-text time">
+                                                                    Пн - Вс, без выходных
+                                                                    с 10:00 до 23:00
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="address-tel">
+                                                            <div>
+                                                                <p class="contact-title">
+                                                                    Телефоны:
+                                                                </p>
+                                                                <p class="contact-text">
+                                                                    <a href="tel:+380638442311" class="phone">+380 63 844 23 11 </a>
+                                                                    <a href="tel:+380668443211" class="phone">+380 66 844 32 11 </a>
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <div class="social-icon">
+                                                                    <a href="#">
+                                                                        <div class="image-icon">
+                                                                            <img src="images/facebook.png" alt="">
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <div class="image-icon inst">
+                                                                            <img src="images/instagram.png" alt="">
+                                                                        </div>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <div class="image-icon">
+                                                                            <img src="images/youtube.png" alt="">
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--<div class="image">-->
+                                                    <!--<img src="images/map.png" alt="">-->
+                                                    <!--</div>-->
+                                                    <div class="map">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5335.057346303622!2d30.485790767551773!3d50.45964072690475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x40d4ce7976bee27b%3A0x1d3e315c9ebba01c!2z0JvRg9C6J9GP0L3RltCy0YHRjNC60LA!3m2!1d50.461178999999994!2d30.483670999999998!4m5!1s0x40d4ce65bb637e0d%3A0x15a04ce32f6333ef!2z0JHQtdGF0YLQtdGA0LXQstGB0LrQuNC5INC_0LXRgC4sIDE00JUsINCa0LjQtdCyLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwMjAwMA!3m2!1d50.459371499999996!2d30.4965899!5e0!3m2!1sru!2sua!4v1574811075804!5m2!1sru!2sua"
+                                                                width="933" height="394" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!--.......................PIZZAS.......................-->
+
+                                        <section class="pizzas">
+                                            <div class="container">
+                                                <h2 class="caption">
+                                                    У НАС ВЫ ВСЕГДА СМОЖЕТЕ ЗАКАЗАТЬ ПИЦЦУ
+                                                </h2>
+
+                                                <div class="pizzas-inner">
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza1.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza2.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza3.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza4.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--</div>-->
+
+                                                    <!--<div class="row">-->
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza1.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza2.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza3.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-xl-3 col-md-6 text-center">-->
+                                                    <div class="pizza-card">
+                                                        <div class="image">
+                                                            <img src="images/pizza4.png" alt="">
+                                                        </div>
+                                                        <div class="pizza-body">
+                                                            <h4 class="title">
+                                                                Паперони
+                                                            </h4>
+                                                            <p class="composition">
+                                                                Грибы, Тесто, Томаты, маслины,
+                                                                мясо курицы, перец
+                                                            </p>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Размер</span>
+                                                                <span class="line-first"></span>
+                                                                <span class="text">52см</span>
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="text text-uppercase">Выход</span>
+                                                                <span class="line-second"></span>
+                                                                <span class="text">300г</span>
+                                                            </div>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="clock" id="deliver">
+                                                    <div class="image-clock">
+                                                        <img src="images/clock.png" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row free-shipping">
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <h2 class="free-caption">
+                                                            БЕСПЛАТНО ДОСТАВИМ ПИЦЦУ В ТЕЧЕНИИ 20 МИН
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <form class="order-main">
+                                                            <input placeholder="+380 ________________________" type="tel" name="phone" class="phoneidcl"
+                                                                   required>
+                                                            <input name="order" type="hidden"
+                                                                   value="Бесплатно доставим пиццу в течении 20 мин">
+                                                            <button class="disbutt" disabled>
+                                                                <span class="btn">Заказать</span>
+                                                            </button>
+                                                        </form>
+                                                        <p class="free-text">
+                                                            Если не успеем, пицца за наш счёт
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="clock">
+                                                    <div class="image-clock">
+                                                        <img src="images/clock.png" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                        <!--.......................DELIVERY.......................-->
+
+                                        <section class="delivery">
+                                            <div class="container">
+                                                <h2 class="caption">
+                                                    ПОЧЕМУ ИМЕННО НАША ДОСТАВКА ПИЦЦЫ?
+                                                </h2>
+                                                <div class="row d-flex justify-content-center">
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="item clock">
+                                                            <div class="image">
+                                                                <img src="images/clock-deliver.png" alt="">
+                                                            </div>
+                                                            <h4 class="title">
+                                                                САМАЯ БЫСТРАЯ ДОСТАВКА ПИЦЦЫ, НА "РАЙОН"
+                                                            </h4>
+                                                            <p class="text">
+                                                                ИЛИ МЫ ДОСТАВИМ ПИЦЦУ ЗА 20 МИН
+                                                                ИЛИ УЖИН ЗА НАШ СЧЕТ
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="item value">
+                                                            <div class="image">
+                                                                <img src="images/value-deliver.png" alt="">
+                                                            </div>
+                                                            <h4 class="title">
+                                                                ТОЛЬКО СВЕЖИЕ ПРОДУКТЫ
+                                                            </h4>
+                                                            <p class="text">
+                                                                ИСПОЛЬЗУЕМ ТОЛЬКО СВЕЖИЕ ПРОДУКТЫ ОТ ВЕДУЩИХ МИРОВЫХ БРЕНДОВ
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="item cook">
+                                                            <div class="image">
+                                                                <img src="images/cooking-deliver.png" alt="">
+                                                            </div>
+                                                            <h4 class="title">
+                                                                ВЫСОКИЙ УРОВЕНЬ КВАЛИФИКАЦИИ ПЕРСОНАЛА
+                                                            </h4>
+                                                            <p class="text">
+                                                                У НАС РАБОТАЮТ ТОЛЬКО ЛУЧШИЕ МАСТЕРА, ПОЭТОМУ НАША ПИЦЦА САМАЯ ВКУСНАЯ
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!--.......................PRODUCTS.......................-->
+
+                                        <section class="products" id="products">
+                                            <div class="container">
+                                                <h2 class="caption">
+                                                    У НАС ВСЕГДА ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ МИРОВЫХ БРЕНДОВ
+                                                </h2>
+                                                <div class="products-inner">
+
+                                                    <div class="item">
+                                                        <div class="image">
+                                                            <img src="images/meet.png" alt="">
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <h4 class="title">
+                                                                мясные изделия
+                                                            </h4>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div class="image">
+                                                            <img src="images/cheese.png" alt="">
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <h4 class="title">
+                                                                сыры
+                                                            </h4>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item midl">
+                                                        <div class="item-body">
+                                                            <h4 class="title">
+                                                                импорт
+                                                            </h4>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="images/fructs.png" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item alco midl">
+                                                        <div class="item-body">
+                                                            <h4 class="title">
+                                                                алкогольные и <br> безалкогольные напитки
+                                                            </h4>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="images/vine.png" alt="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item veg">
+                                                        <div class="image">
+                                                            <img src="images/vegitable.png" alt="">
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <h4 class="title">
+                                                                овощи, фрукты, <br> сухофрукты
+                                                            </h4>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item milk">
+                                                        <div class="image">
+                                                            <img src="images/milk.png" alt="">
+                                                        </div>
+                                                        <div class="item-body">
+                                                            <h4 class="title">
+                                                                молочная продукция <br>
+                                                                и заморожена продукция
+                                                            </h4>
+                                                            <div class="button">
+                                                                <a class="btn" href="#">Заказать</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!--.......................FRIDGE.......................-->
+
+                                        <section class="fridge">
+                                            <div class="container">
+                                                <h2 class="caption">
+                                                    НЕТ ВРЕМЕНИ СХОДИТЬ В МАГАЗИН, А ХОЛОДИЛЬНИК СОВСЕМ ПУСТ?
+                                                </h2>
+
+                                                <div class="row d-flex justify-content-center">
+                                                    <div class="col-lg-4 col-md-6 item">
+                                                        <div class="image m-auto">
+                                                            <img src="images/fridge1.png" alt="">
+                                                            <h4 class="title">
+                                                                ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6 item">
+                                                        <div class="image m-auto">
+                                                            <img src="images/fridge2.png" alt="">
+                                                            <h4 class="title">
+                                                                ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6 item">
+                                                        <div class="image m-auto">
+                                                            <img src="images/fridge3.png" alt="">
+                                                            <h4 class="title">
+                                                                НАШ КУРЬЕР В ТЕЧЕНИИ 20 МИН ОПЕРАТИВНО ДОСТАВИТ ВСЕ НЕОБХОДИМЫЕ ПРОДУКТЫ ВАМ ПО АДРЕСУ
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="list first">
+                                                    <div class="image-list">
+                                                        <img src="images/list.png" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row free-shipping">
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <h2 class="free-caption">
+                                                            ОСТАВЬТЕ ХЛОПОТЫ ПО СОСТАВЛЕНИЮ СПИСКА И ДОСТАВКИ ПРОДУКТОВ ДОМОЙ НАМ
+                                                        </h2>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <form class="order-main">
+                                                            <input placeholder="+380 ________________________" type="tel" name="phone" class="phoneidcl"
+                                                                   required>
+                                                            <input name="order" type="hidden"
+                                                                   value="Доставка продуктов домой">
+                                                            <button class="disbutt" disabled>
+                                                                <span class="btn">Заказать</span>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list second">
+                                                    <div class="image-list">
+                                                        <img src="images/list.png" alt="">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                        <!--.......................CORPORATE.......................-->
+
+                                        <section class="corporate">
+                                            <div class="container">
+                                                <div class="row corporate-inner">
+                                                    <div class="col-lg-6">
+                                                        <div class="image">
+                                                            <img src="images/cafe.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 d-flex align-items-center">
+                                                        <h2 class="cafe-caption">
+                                                            В зоне кафе можно попробовать нашу
+                                                            фирменную пиццу, стейк или свежую выпечку с чашкой кофе
+                                                        </h2>
+                                                    </div>
+                                                </div>
+
+                                                <h2 class="caption" id="corporate">
+                                                    НАМЕЧАЕТСЯ КОРПОРАТИВ? ПОМОЖЕМ С ПОДБОРО И ДОСТАВКОЙ ПРОДУКТОВОЙ КОРЗИНЫ
+                                                </h2>
+
+
+                                                <div class="row">
+                                                    <div class="col-xl-7 col-lg-12">
+                                                        <div class="images">
+                                                            <div class="image">
+                                                                <img src="images/corpor1.png" alt="">
+                                                                <p class="text">
+                                                                    Доставка канапе для праздника
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="image">
+                                                                <img src="images/corpor2.png" alt="">
+                                                                <p class="text">
+                                                                    Доставка канапе для праздника
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="image">
+                                                                <img src="images/corpor3.png" alt="">
+                                                                <p class="text">
+                                                                    Доставка канапе для праздника
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="image">
+                                                                <img src="images/corpor1.png" alt="">
+                                                                <p class="text">
+                                                                    Доставка канапе для праздника
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-5 col-lg-12 form">
+                                                        <form class="order-main">
+                                                            <h4 class="form-title">
+                        <span id="customTextForm">
+                        ЗАПОЛНИТЕ ФОРМУ НИЖЕ И НАШ МЕНЕДЖЕР ПОМОЖЕТ СОСТАВИТЬ ВАМ СПИСОК ПРОДУКТОВ И ДОСТАВИТЬ ЧЕТКО ПО АДРЕСУ
+                        </span>
+                                                            </h4>
+                                                            <input placeholder="ИМЯ" type="text" name="name" required>
+                                                            <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+                                                            <textarea placeholder="Комментарий (бюджет, колличество людей)" type="text"
+                                                                      name="text"></textarea>
+                                                            <input name="order" type="hidden"
+                                                                   value="ЗАПОЛНИТЕ ФОРМУ НИЖЕ И НАШ МЕНЕДЖЕР ПОМОЖЕТ СОСТАВИТЬ ВАМ СПИСОК ПРОДУКТОВ И ДОСТАВИТЬ ЧЕТКО ПО АДРЕСУ">
+
+                                                            <button class="disbutt" disabled>
+                                                                <span class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                        <!--.......................MAGAZINE.......................-->
+
+                                        <section class="magazine">
+                                            <div class="container">
+                                                <h2 class="caption">
+                                                    НЕТ ВРЕМЕНИ СХОДИТЬ В МАГАЗИН, А КОРПОРАТИВ УЖЕ СКОРО?
+                                                </h2>
+                                                <p class="title">
+                                                    ОСТАВЬТЕ ХЛОПОТЫ ПО СОСТАВЛЕНИЕ СПИСКА И ДОСТАВКОЙ ПРОДУКТОВ НАМ
+                                                </p>
+                                                <div class="row d-flex justify-content-center">
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="item">
+                                                            <div class="image">
+                                                                <img src="images/fridge1.png" alt="">
+                                                            </div>
+                                                            <h4 class="text first">
+                                                                ПРОФЕССИОНАЛЬНАЯ КОНСУЛЬТАЦИЯ МЕНЕДЖЕРА ПОМОЖЕТ ВАМ СОСТАВИТЬ СПИСОК ПРОДУКТОВ
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="item">
+                                                            <div class="image">
+                                                                <img src="images/fridge2.png" alt="">
+                                                            </div>
+                                                            <h4 class="text second">
+                                                                ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ, ПОЗВОЛИТ УКРАСИТЬ ВАШ КОРПОРАТИВНЫЙ СТОЛ, А ЗАРУБЕЖНЫЕ
+                                                                ДЕЛИКАТЕСЫ МОГУТ УДИВИТЬ ВАШ КОЛЕГ
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="item">
+                                                            <div class="image">
+                                                                <img src="images/fridge3.png" alt="">
+                                                            </div>
+                                                            <h4 class="text third">
+                                                                НАШ КУРЬЕР В ТЕЧЕНИИ 20 МИН ОПЕРАТИВНО ДОСТАВИТ ВСЕ НЕОБХОДИМЫЕ ПРОДУКТЫ ВАМ ПО АДРЕСУ
+                                                            </h4>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <!--.......................REVIEWS.......................-->
+
+                                        <section class="reviews">
+                                            <div class="container">
+
+                                                <h2 class="caption">
+                                                    ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+                                                </h2>
+
+                                                <div class="reviews-slider">
+
+                                                    <div class="reviews-body">
+                                                        <div class="reviews-title">
+                                                            <div class="image">
+                                                                <img src="images/foto1.png" alt="клиент">
+                                                            </div>
+                                                            <div class="title">
+                                                                <p class="name">Балицкий Александр</p>
+                                                                <p class="town">Киев</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="reviews-text">
+                                                            Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую
+                                                            востребованность глубокомысленных рассуждений. А также базовые сценарии поведения
+                                                            пользователей, которые представляют собой яркий пример континентально-европейского
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="reviews-body">
+                                                        <div class="reviews-title">
+                                                            <div class="image">
+                                                                <img src="images/foto2.png" alt="клиент">
+                                                            </div>
+                                                            <div class="title">
+                                                                <p class="name">Бондар Виталия</p>
+                                                                <p class="town">Днепр</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="reviews-text">
+                                                            Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую
+                                                            востребованность глубокомысленных рассуждений. А также базовые сценарии поведения
+                                                            пользователей, которые представляют собой яркий пример континентально-европейского
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="reviews-body">
+                                                        <div class="reviews-title">
+                                                            <div class="image">
+                                                                <img src="images/foto3.png" alt="клиент">
+                                                            </div>
+                                                            <div class="title">
+                                                                <p class="name">Король Юрий</p>
+                                                                <p class="town">Киев</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="reviews-text">
+                                                            Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую
+                                                            востребованность глубокомысленных рассуждений. А также базовые сценарии поведения
+                                                            пользователей, которые представляют собой яркий пример континентально-европейского
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="reviews-body">
+                                                        <div class="reviews-title">
+                                                            <div class="image">
+                                                                <img src="images/foto1.png" alt="клиент">
+                                                            </div>
+                                                            <div class="title">
+                                                                <p class="name">Балицкий Александр</p>
+                                                                <p class="data">10.08.2019</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="reviews-text">
+                                                            Ясность нашей позиции очевидна: глубокий уровень погружения предопределяет высокую
+                                                            востребованность глубокомысленных рассуждений. А также базовые сценарии поведения
+                                                            пользователей, которые представляют собой яркий пример континентально-европейского
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </main>
+                                    <!--.......................FOOTER.......................-->
+                                    <footer class="footer" id="footer">
+                                        <div class="container">
+                                            <h2 class="caption">
+                                                КОНТАКТЫ
+                                            </h2>
+                                            <div class="row footer-inner">
+                                                <div class="col-lg-6">
+                                                    <div class="contact">
+                                                        <div class="social">
+                                                            <a href="#" class="social-block facebook">
+                                                                <div class="image">
+                                                                    <img src="images/facebook.png" alt="">
+                                                                </div>
+                                                                <span class="social-text">
+                                    Facebook
+                                </span>
+                                                            </a>
+
+                                                            <a href="#" class="social-block instagram">
+                                                                <div class="image">
+                                                                    <img src="images/instagram.png" alt="">
+                                                                </div>
+                                                                <span class="social-text">
+                                    Instagram
+                                </span>
+                                                            </a>
+
+                                                            <a href="#" class="social-block youtube">
+                                                                <div class="image">
+                                                                    <img src="images/youtube.png" alt="">
+                                                                </div>
+                                                                <span class="social-text">
+                                    YouTube
+                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="phones">
+                                                            <div class="phones-block">
+                                                                <p class="contact-title">
+                                                                    Телефоны:
+                                                                </p>
+                                                                <p class="contact-text">
+                                                                    <a href="tel:+380638442311" class="phone">+380 63 844 23 11 </a>
+                                                                    <a href="tel:+380668443211" class="phone">+380 66 844 32 11 </a>
+                                                                </p>
+                                                            </div>
+                                                            <div class="phones-block">
+                                                                <p class="contact-title">
+                                                                    Почта:
+                                                                </p>
+                                                                <p class="contact-text">
+                                                                    <a href="mailto:SelectoFresh@info.com.ua"
+                                                                       class="phone">SelectoFresh@info.com.ua </a>
+                                                                </p>
+                                                            </div>
+                                                            <div class="phones-block">
+                                                                <p class="contact-title">
+                                                                    Адрес:
+                                                                </p>
+                                                                <p class="contact-text">
+                                                                    Киев, Киевская 25
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 form">
+                                                    <form class="order-main">
+                                                        <h4 class="form-title">
+                        <span id="customTextForm2">
+                        Остались Вопросы?
+                        </span>
+                                                        </h4>
+                                                        <input placeholder="ИМЯ" type="text" name="name" required>
+                                                        <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+                                                        <input name="order" type="hidden"
+                                                               value="Остались Вопросы?">
+                                                        <button class="disbutt" disabled>
+                                                            <span class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
+
+                                    <!--/////pop-up-->
+                                    <!--<div id="popup" class="mfp-hide popup">-->
+                                    <!--<div class="container-big">-->
+                                    <!--<div class="container">-->
+
+                                    <!--<span class="line1 line"></span>-->
+                                    <!--<span class="line2 line"></span>-->
+                                    <!--<span class="line3 line"></span>-->
+                                    <!--<span class="line4 line"></span>-->
+                                    <!--<span class="line5 line"></span>-->
+
+                                    <!--<form class="order-main">-->
+                                    <!--<h2 class="caption">Заполните форму</h2>-->
+                                    <!--<h4 class="form-title">-->
+                                    <!--<span id="customTextForm">-->
+                                    <!--Для бесплатной консультации-->
+                                    <!--</span>-->
+                                    <!--</h4>-->
+                                    <!--<input placeholder="Ваше Имя" type="text" name="name" required>-->
+                                    <!--<input placeholder="Ваш Телефон" type="tel" name="phone" class="phoneidcl" required>-->
+                                    <!--<input name="order" type="hidden" id="input_order">-->
+
+                                    <!--<button class="disbutt" disabled>-->
+                                    <!--<span class="btn">Отправить</span>-->
+                                    <!--</button>-->
+                                    <!--</form>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--pop-up end-->
+
+                                </div>
+
+                                <!-- jQuery -->
+                                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                                        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                                        crossorigin="anonymous"></script>
+                                <!-- jQuery -->
+                                <script src="js/jquery.min.js"></script>
+                                <!-- Fontawesome -->
+                                <script defer src="js/all.js"></script>
+                                <!-- Bootstrap -->
+                                <script src="js/bootstrap.min.js"></script>
+                                <!-- Slick -->
+                                <script src="js/slick.min.js"></script>
+                                <!-- Magnific Popup core JS file -->
+                                <script src="js/jquery.magnific-popup.min.js"></script>
+                                <!-- Input Mask -->
+                                <script src="js/jquery.inputmask.bundle.min.js"></script>
+                                <!-- Page Scroll -->
+                                <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+                                <!-- Main JS -->
+                                <script src="js/main.js"></script>
+                                </body>
+                                </html>
+                                <img src="images/fridge2.png" alt="">
                             </div>
                             <h4 class="text second">
-                                ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ, ПОЗВОЛИТ УКРАСИТЬ ВАШ КОРПОРАТИВНЫЙ СТОЛ, А ЗАРУБЕЖНЫЕ ДЕЛИКАТЕСЫ МОГУТ УДИВИТЬ ВАШ КОЛЕГ
+                                ШИРОКИЙ ВЫБОР СВЕЖИХ ПРОДУКТОВ, ПОЗВОЛИТ УКРАСИТЬ ВАШ КОРПОРАТИВНЫЙ СТОЛ, А ЗАРУБЕЖНЫЕ
+                                ДЕЛИКАТЕСЫ МОГУТ УДИВИТЬ ВАШ КОЛЕГ
                             </h4>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="item">
                             <div class="image">
-                                <img src="images/magazine3.png" alt="">
+                                <img src="images/fridge3.png" alt="">
                             </div>
                             <h4 class="text third">
                                 НАШ КУРЬЕР В ТЕЧЕНИИ 20 МИН ОПЕРАТИВНО ДОСТАВИТ ВСЕ НЕОБХОДИМЫЕ ПРОДУКТЫ ВАМ ПО АДРЕСУ
@@ -917,38 +1997,120 @@
         </section>
     </main>
     <!--.......................FOOTER.......................-->
-    <!--<footer class="footer" id="footer">-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <h2 class="caption">
+                КОНТАКТЫ
+            </h2>
+            <div class="row footer-inner">
+                <div class="col-lg-6">
+                    <div class="contact">
+                        <div class="social">
+                            <a href="#" class="social-block facebook">
+                                <div class="image">
+                                    <img src="images/facebook.png" alt="">
+                                </div>
+                                <span class="social-text">
+                                    Facebook
+                                </span>
+                            </a>
 
-    <!--</footer>-->
+                            <a href="#" class="social-block instagram">
+                                <div class="image">
+                                    <img src="images/instagram.png" alt="">
+                                </div>
+                                <span class="social-text">
+                                    Instagram
+                                </span>
+                            </a>
+
+                            <a href="#" class="social-block youtube">
+                                <div class="image">
+                                    <img src="images/youtube.png" alt="">
+                                </div>
+                                <span class="social-text">
+                                    YouTube
+                                </span>
+                            </a>
+                        </div>
+                        <div class="phones">
+                            <div class="phones-block">
+                                <p class="contact-title">
+                                    Телефоны:
+                                </p>
+                                <p class="contact-text">
+                                    <a href="tel:+380638442311" class="phone">+380 63 844 23 11 </a>
+                                    <a href="tel:+380668443211" class="phone">+380 66 844 32 11 </a>
+                                </p>
+                            </div>
+                            <div class="phones-block">
+                                <p class="contact-title">
+                                    Почта:
+                                </p>
+                                <p class="contact-text">
+                                    <a href="mailto:SelectoFresh@info.com.ua"
+                                       class="phone">SelectoFresh@info.com.ua </a>
+                                </p>
+                            </div>
+                            <div class="phones-block">
+                                <p class="contact-title">
+                                    Адрес:
+                                </p>
+                                <p class="contact-text">
+                                    Киев, Киевская 25
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 form">
+                    <form class="order-main">
+                        <h4 class="form-title">
+                        <span id="customTextForm2">
+                        Остались Вопросы?
+                        </span>
+                        </h4>
+                        <input placeholder="ИМЯ" type="text" name="name" required>
+                        <input placeholder="ТЕЛЕФОН" type="tel" name="phone" class="phoneidcl" required>
+                        <input name="order" type="hidden"
+                               value="Остались Вопросы?">
+                        <button class="disbutt" disabled>
+                            <span class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!--/////pop-up-->
     <!--<div id="popup" class="mfp-hide popup">-->
-        <!--<div class="container-big">-->
-            <!--<div class="container">-->
+    <!--<div class="container-big">-->
+    <!--<div class="container">-->
 
-                <!--<span class="line1 line"></span>-->
-                <!--<span class="line2 line"></span>-->
-                <!--<span class="line3 line"></span>-->
-                <!--<span class="line4 line"></span>-->
-                <!--<span class="line5 line"></span>-->
+    <!--<span class="line1 line"></span>-->
+    <!--<span class="line2 line"></span>-->
+    <!--<span class="line3 line"></span>-->
+    <!--<span class="line4 line"></span>-->
+    <!--<span class="line5 line"></span>-->
 
-                <!--<form class="order-main">-->
-                    <!--<h2 class="caption">Заполните форму</h2>-->
-                    <!--<h4 class="form-title">-->
-            <!--<span id="customTextForm">-->
-                <!--Для бесплатной консультации-->
-            <!--</span>-->
-                    <!--</h4>-->
-                    <!--<input placeholder="Ваше Имя" type="text" name="name" required>-->
-                    <!--<input placeholder="Ваш Телефон" type="tel" name="phone" class="phoneidcl" required>-->
-                    <!--<input name="order" type="hidden" id="input_order">-->
+    <!--<form class="order-main">-->
+    <!--<h2 class="caption">Заполните форму</h2>-->
+    <!--<h4 class="form-title">-->
+    <!--<span id="customTextForm">-->
+    <!--Для бесплатной консультации-->
+    <!--</span>-->
+    <!--</h4>-->
+    <!--<input placeholder="Ваше Имя" type="text" name="name" required>-->
+    <!--<input placeholder="Ваш Телефон" type="tel" name="phone" class="phoneidcl" required>-->
+    <!--<input name="order" type="hidden" id="input_order">-->
 
-                    <!--<button class="disbutt" disabled>-->
-                        <!--<span class="btn">Отправить</span>-->
-                    <!--</button>-->
-                <!--</form>-->
-            <!--</div>-->
-        <!--</div>-->
+    <!--<button class="disbutt" disabled>-->
+    <!--<span class="btn">Отправить</span>-->
+    <!--</button>-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--</div>-->
     <!--</div>-->
 
     <!--pop-up end-->

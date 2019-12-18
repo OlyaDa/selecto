@@ -69,6 +69,7 @@ $caption_text: Cera Pro, sans-serif;
     font-size: 14px;
     line-height: 17px;
     color: #242424;
+    max-width: 392px;
   }
 
   .reviews-body {
@@ -152,6 +153,42 @@ $caption_text: Cera Pro, sans-serif;
     content: "";
   }
   ///slick-prev slick-next end
+
+  ///media
+
+  @media (max-width: 1200px) {
+    .slick-prev.slick-arrow {
+      left: 90% !important;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .reviews-body {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    .slick-prev.slick-arrow {
+      left: -1% !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0 75px 0;
+    .caption {
+      font-size: 38px;
+      line-height: 38px;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 460px) {
+    .slick-next, .slick-prev {
+      top: 114%;
+    }
+    }
+  }
+  .slick-next {
 }
 
 //////////////////////////REVIEWS END////////////////////////
