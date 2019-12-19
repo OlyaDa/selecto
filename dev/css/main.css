@@ -280,7 +280,6 @@
     .banner .text-first .title {
       margin-bottom: 8px; }
     .banner .text-first .text {
-      text-shadow: 2px 2px 2px #AAA5B8;
       margin-top: 14px; } }
   @media (max-width: 1024px) {
     .banner .banner-inner {
@@ -1063,7 +1062,10 @@
   @media (max-width: 690px) {
     .products .item {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
+    .products .button {
+      margin-bottom: 30px; }
     .products .midl {
       flex-direction: column-reverse; } }
 
